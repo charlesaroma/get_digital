@@ -1,45 +1,170 @@
 {
   "home": {
     "hero": {
-      "title": "Amplifying Tech Usage in Uganda",
+      "badge": "Amplifying Tech Usage in Uganda",
+      "title": "Technology Made Simple",
       "tagline": "Technology Made Simple.",
-      "text": "A practical guide to everyday technology: useful tools, common tech problems and digital skills."
+      "text": "GetDigital256 is a nonprofit in Lira that helps beginners, small businesses, teachers and young people use everyday technology and practical AI with confidence. Simple English guides, free courses and honest advice.",
+      "primary": {
+        "label": "Explore Latest Guides",
+        "to": "/blogs"
+      },
+      "secondary": {
+        "label": "Explore the AI Course",
+        "to": "/#free-ai-course"
+      },
+      "proof": [
+        "Based in Lira, Uganda",
+        "Free AI course",
+        "Learn on any phone"
+      ]
+    },
+    "aiLab": {
+      "title": "GetDigital AI Lab",
+      "week": "Week 3 of 4",
+      "progress": 64,
+      "progressLabel": "Course progress",
+      "steps": [
+        {
+          "id": "ask",
+          "label": "Ask an AI Assistant",
+          "short": "Ask"
+        },
+        {
+          "id": "prompt",
+          "label": "Learn How to Prompt",
+          "short": "Prompt"
+        },
+        {
+          "id": "work",
+          "label": "Put AI to Work",
+          "short": "Work"
+        }
+      ],
+      "ask": {
+        "question": "Explain what an AI assistant is in simple English.",
+        "answer": "An AI assistant is a computer program you can chat with. You type a question and it writes an answer for you, like a helpful friend who has read a lot. Always check important answers with a trusted source."
+      },
+      "prompt": {
+        "weak": "Write a CV.",
+        "better": "Write a one page CV for a primary school teacher in Lira with three years of experience. Use simple English and bullet points.",
+        "parts": [
+          "Who it is for",
+          "What you need",
+          "Your situation",
+          "The format"
+        ]
+      },
+      "work": [
+        {
+          "id": "study",
+          "label": "Study plan",
+          "prompt": "Make a four week study plan for my S4 maths exams. I can study one hour each evening.",
+          "result": [
+            "Week by week topics",
+            "Daily one hour sessions",
+            "Revision days before the exam"
+          ]
+        },
+        {
+          "id": "task",
+          "label": "Work task",
+          "prompt": "Write a polite WhatsApp message reminding a customer that their payment is due on Friday.",
+          "result": [
+            "A short, friendly message",
+            "Clear due date",
+            "Ready to copy and send"
+          ]
+        },
+        {
+          "id": "social",
+          "label": "Social media",
+          "prompt": "Write three Facebook post ideas for my tailoring shop in Lira.",
+          "result": [
+            "Three post ideas",
+            "Simple captions",
+            "A call to visit the shop"
+          ]
+        },
+        {
+          "id": "phone",
+          "label": "Phone fix",
+          "prompt": "My Android phone storage is full. Give me safe steps to free up space.",
+          "result": [
+            "Step by step checklist",
+            "What is safe to delete",
+            "How to back up first"
+          ]
+        }
+      ]
     },
     "about": {
+      "eyebrow": "Who we are",
       "title": "About GetDigital",
       "text": "A Ugandan not-for-profit that trains underserved communities in digital skills, including informal SMEs, youth groups and refugee communities.",
       "cards": [
         {
           "id": "mission",
+          "number": "01",
           "title": "Mission",
           "text": "Make digital knowledge more accessible in Uganda."
         },
         {
           "id": "vision",
+          "number": "02",
           "title": "Vision",
           "text": "A digitally confident Uganda."
         },
         {
           "id": "commitment",
+          "number": "03",
           "title": "Commitment",
           "text": "Clear, responsibly researched content that separates fact from opinion and discloses commercial relationships."
         }
       ]
     },
     "freeAi": {
+      "eyebrow": "Free AI Learning",
       "title": "Learn practical AI skills for everyday life.",
       "class": "Introduction to AI and LLMs",
+      "startsOn": "2027-01-11",
+      "startLabel": "Cohort starts Monday, 11 January 2027",
+      "facts": [
+        "Free",
+        "Four weeks",
+        "Online, on any device"
+      ],
       "points": [
         "Learn from any device",
         "Practical lessons",
-        "Asking better questions",
-        "Checking AI output",
-        "Working smarter",
-        "Learning without coding"
-      ]
+        "Ask better questions",
+        "Check what AI says",
+        "Work smarter",
+        "Learn with confidence"
+      ],
+      "cta": "Register for free",
+      "secondaryCta": "Ask a question"
+    },
+    "partners": {
+      "eyebrow": "Partners",
+      "title": "Working together for a digitally confident Uganda",
+      "text": "Organisations working with GetDigital to make technology and digital skills more accessible."
+    },
+    "guides": {
+      "eyebrow": "Featured guides",
+      "title": "Practical guides for everyday tech",
+      "text": "Guides on devices, software, AI and staying safe online."
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Send your message",
+      "text": "Questions about a guide, the AI course or working with us? Write to us and we will reply by email."
     }
   },
   "about": {
+    "title": "About GetDigital",
+    "text": "A Ugandan not-for-profit that trains underserved communities in digital skills, including informal SMEs, youth groups and refugee communities.",
+    "valuesTitle": "What we stand for",
     "values": [
       {
         "id": "trust",
@@ -69,21 +194,33 @@
   },
   "press": {
     "title": "Press",
-    "text": "News and press releases from GetDigital."
+    "text": "News and press releases from GetDigital.",
+    "empty": "No press releases yet. Check back soon."
   },
   "blogs": {
     "title": "Blogs",
-    "text": "Guides on devices, software, AI and staying safe online."
+    "text": "Guides on devices, software, AI and staying safe online.",
+    "empty": "No guides in this category yet.",
+    "movingNote": "We are moving this guide to our new website. Here is the summary while the full article is published."
   },
   "contact": {
-    "title": "Send your message"
+    "title": "Send your message",
+    "text": "Questions about a guide, the AI course or working with us? Write to us and we will reply by email."
   },
   "vote": {
     "title": "Vote",
-    "text": "Cast your vote for your favourite nominees."
+    "text": "Cast your vote for your favourite nominees.",
+    "emptyTitle": "Voting is not open yet",
+    "emptyText": "When a poll opens, the nominees will appear here. Follow us on X or YouTube for the announcement."
   },
   "tickets": {
     "title": "Tickets",
-    "text": "Get tickets to GetDigital events."
+    "text": "Get tickets to GetDigital events.",
+    "emptyTitle": "No events on sale right now",
+    "emptyText": "Upcoming GetDigital events will appear here with tickets. Meanwhile, join the free AI course."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you are looking for has moved or no longer exists. Our old website addresses now point to the new pages."
   }
 }
