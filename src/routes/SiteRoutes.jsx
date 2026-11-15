@@ -3,7 +3,7 @@ import { Route } from "react-router-dom";
 
 import NotFound from "@/pages/not-found";
 import SiteLayout from "./SiteLayout";
-import { AboutPage, BlogsPage, ContactPage, HomePage, PartnersPage, PressPage, TicketsPage, VotePage } from "./pages";
+import { AboutPage, BlogPostPage, BlogsPage, ContactPage, HomePage, PartnersPage, PressPage, TicketsPage, VotePage } from "./pages";
 
 export default function siteRoutes() {
   return (
@@ -13,6 +13,7 @@ export default function siteRoutes() {
       <Route path="partners" element={<PartnersPage />} />
       <Route path="press" element={<PressPage />} />
       <Route path="blogs" element={<BlogsPage />} />
+      <Route path="blogs/:slug" element={<BlogPostPage />} />
       <Route path="vote" element={<VotePage />} />
       <Route path="tickets" element={<TicketsPage />} />
       <Route path="contact" element={<ContactPage />} />
