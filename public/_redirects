@@ -1,0 +1,35 @@
+# GetDigital256 redirects for Netlify or Cloudflare Pages.
+# Same rules for Nginx: deploy/gd256.org.nginx.conf. For Apache or cPanel: public/.htaccess.
+
+# Old WordPress blog posts (gd256.org/<slug>/) now live under /blogs/<slug>
+/learn-ai-on-a-phone  /blogs/learn-ai-on-a-phone  301
+/ai-skills-ugandan-job-ads  /blogs/ai-skills-ugandan-job-ads  301
+/ai-for-teachers-in-uganda  /blogs/ai-for-teachers-in-uganda  301
+/what-to-do-before-job-hunting-in-uganda  /blogs/what-to-do-before-job-hunting-in-uganda  301
+
+# Old WordPress paths
+/home            /            301
+/index.php       /            301
+/about-us        /about       301
+/contact-us      /contact     301
+/blog            /blogs       301
+/blog/*          /blogs       301
+/category/*      /blogs       301
+/tag/*           /blogs       301
+/author/*        /blogs       301
+/page/*          /blogs       301
+/feed           /blogs       301
+/feed/*          /blogs       301
+/news            /press       301
+/news/*          /press       301
+/voting          /vote        301
+/ticket          /tickets     301
+/events          /tickets     301
+/free-ai-course  /#free-ai-course  301
+
+# WordPress admin and login no longer exist
+/wp-admin/*      /            301
+/wp-login.php    /            301
+
+# Single page app fallback (keep last)
+/*               /index.html  200
