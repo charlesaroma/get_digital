@@ -45,15 +45,15 @@ export default function AboutPage() {
             </Button>
           </Reveal>
           <Stagger as="ul" className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-8">
-            {copy.values.map((v, i) => {
+            {copy.values.map((v) => {
               const Icon = VALUE_ICONS[v.id] ?? Lightbulb;
               return (
-                <StaggerItem as="li" key={v.id} className={i === 0 ? "rounded-2xl bg-gd-navy-900 p-6 text-white sm:p-7" : "rounded-2xl border border-border bg-surface p-6 shadow-card sm:p-7"}>
-                  <span className={i === 0 ? "grid size-11 place-items-center rounded-xl bg-gd-yellow-500 text-gd-navy-900" : "grid size-11 place-items-center rounded-xl bg-primary-soft text-gd-navy-900 dark:text-gd-yellow-100"}>
+                <StaggerItem as="li" key={v.id} className="rounded-2xl border border-border bg-surface p-6 shadow-card sm:p-7">
+                  <span className="grid size-11 place-items-center rounded-xl bg-primary-soft text-gd-navy-900 dark:text-gd-yellow-100">
                     <Icon aria-hidden="true" size={20} strokeWidth={1.75} />
                   </span>
-                  <h3 className={i === 0 ? "mt-5 font-display text-h4 text-white" : "mt-5 font-display text-h4"}>{v.title}</h3>
-                  <p className={i === 0 ? "mt-2 text-gd-navy-100" : "mt-2 text-muted"}>{v.text}</p>
+                  <h3 className="mt-5 font-display text-h4">{v.title}</h3>
+                  <p className="mt-2 text-muted">{v.text}</p>
                 </StaggerItem>
               );
             })}
