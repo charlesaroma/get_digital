@@ -1,0 +1,8 @@
+[
+  { "id": "cyberiad-labs", "name": "Cyberiad Labs", "description": "AI school for general audiences; free online courses for individuals; also works with schools, companies, NGOs and governments.", "url": "https://cyberiadlabs.com", "position": 1, "active": true },
+  { "id": "amara-hub", "name": "Amara Hub", "description": "A think-and-do tank building knowledge, networks and resources for communities and emerging leaders.", "url": "https://amarahub.org", "position": 2, "active": true },
+  { "id": "raijin-tech-hub", "name": "Raijin Tech Hub", "description": "Custom software and IT consultancy.", "url": "https://raijintechhub.com", "position": 3, "active": true },
+  { "id": "xyberedge-technologies", "name": "XyberEdge Technologies", "description": "IT infrastructure and information security advisory across Uganda and East Africa.", "url": "https://xyberedgetechnologies.com", "position": 4, "active": true },
+  { "id": "ministry-of-ict", "name": "Ministry of ICT & National Guidance", "description": "Established June 2006; leads ICT policy, laws, regulation and strategy.", "url": "https://ict.go.ug", "position": 5, "active": true },
+  { "id": "nita-u", "name": "NITA-U", "description": "Statutory body created under the NITA-U Act of 2009 that coordinates and regulates IT services.", "url": "https://nita.go.ug", "position": 6, "active": true }
+]
