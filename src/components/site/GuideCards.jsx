@@ -24,7 +24,7 @@ function Meta({ post, className }) {
 
 export function LeadGuide({ post, category }) {
   return (
-    <article className="group relative flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-border bg-surface shadow-card transition-shadow duration-300 hover:shadow-lift">
+    <article className="group relative flex h-full flex-col overflow-hidden rounded-[1.75rem] bg-surface-muted">
       <div className="overflow-hidden">
         <PhotoFrame src={coverOf(post)} alt="" caption={`Cover photo for: ${post.title}`} ratio="16 / 10" className="rounded-none ring-0 transition-transform duration-500 ease-brand group-hover:scale-[1.02]" />
       </div>
