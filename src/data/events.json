@@ -1,0 +1,3 @@
+[
+  { "id": "e1", "slug": "sample-event", "title": "Sample GetDigital Event", "venue": "Lira", "startsAt": "2027-01-11T09:00:00Z", "description": "Placeholder event.", "image": null, "status": "draft" }
+]
