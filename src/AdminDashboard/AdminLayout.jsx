@@ -2,6 +2,8 @@
 import { Suspense } from "react";
 import { Link, Outlet } from "react-router-dom";
 
+import LogoLoader from "@/components/motion/LogoLoader";
+
 import { ADMIN_NAV } from "./lib/constants";
 
 export default function AdminLayout() {
@@ -13,7 +15,7 @@ export default function AdminLayout() {
         ))}
       </aside>
       <main>
-        <Suspense fallback={null}>
+        <Suspense fallback={<LogoLoader />}>
           <Outlet />
         </Suspense>
       </main>
