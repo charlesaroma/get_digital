@@ -1,0 +1,3 @@
+[
+  { "id": "s1", "name": "Dummy Admin", "email": "admin@example.com", "role": "owner", "password": "dummy-only", "active": true }
+]
