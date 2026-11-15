@@ -2,10 +2,19 @@
   "brand": "GetDigital256",
   "tagline": "Technology Made Simple.",
   "legalName": "GetDigital LTD",
-  "address": "P.O. Box 331582, Lira, Amara Hub Building, Plot 62, Lira to Gulu Road",
+  "address": "Amara Hub Building, Plot 62, Lira to Gulu Road, Lira, Uganda",
+  "poBox": "P.O. Box 331582, Lira",
   "email": "getdigital256@gmail.com",
   "socials": [
-    { "id": "x", "label": "X", "url": "https://x.com/GetDigital_256" },
-    { "id": "youtube", "label": "YouTube", "url": "https://www.youtube.com/@GetDigital256" }
+    {
+      "id": "x",
+      "label": "X",
+      "url": "https://x.com/GetDigital_256"
+    },
+    {
+      "id": "youtube",
+      "label": "YouTube",
+      "url": "https://www.youtube.com/@GetDigital256"
+    }
   ]
 }
