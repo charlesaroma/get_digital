@@ -1,0 +1,89 @@
+{
+  "home": {
+    "hero": {
+      "title": "Amplifying Tech Usage in Uganda",
+      "tagline": "Technology Made Simple.",
+      "text": "A practical guide to everyday technology: useful tools, common tech problems and digital skills."
+    },
+    "about": {
+      "title": "About GetDigital",
+      "text": "A Ugandan not-for-profit that trains underserved communities in digital skills, including informal SMEs, youth groups and refugee communities.",
+      "cards": [
+        {
+          "id": "mission",
+          "title": "Mission",
+          "text": "Make digital knowledge more accessible in Uganda."
+        },
+        {
+          "id": "vision",
+          "title": "Vision",
+          "text": "A digitally confident Uganda."
+        },
+        {
+          "id": "commitment",
+          "title": "Commitment",
+          "text": "Clear, responsibly researched content that separates fact from opinion and discloses commercial relationships."
+        }
+      ]
+    },
+    "freeAi": {
+      "title": "Learn practical AI skills for everyday life.",
+      "class": "Introduction to AI and LLMs",
+      "points": [
+        "Learn from any device",
+        "Practical lessons",
+        "Asking better questions",
+        "Checking AI output",
+        "Working smarter",
+        "Learning without coding"
+      ]
+    }
+  },
+  "about": {
+    "values": [
+      {
+        "id": "trust",
+        "title": "Trust",
+        "text": "Secure, stable and reliable guidance."
+      },
+      {
+        "id": "accessibility",
+        "title": "Accessibility",
+        "text": "Simple, intuitive solutions anyone can use."
+      },
+      {
+        "id": "innovation",
+        "title": "Innovation",
+        "text": "Keeping up with useful, emerging technology."
+      },
+      {
+        "id": "reach",
+        "title": "Global Reach",
+        "text": "Technology knowledge for people and communities everywhere."
+      }
+    ]
+  },
+  "partners": {
+    "title": "Partners",
+    "text": "Organisations working with GetDigital to make technology and digital skills more accessible."
+  },
+  "press": {
+    "title": "Press",
+    "text": "News and press releases from GetDigital."
+  },
+  "blogs": {
+    "title": "Blogs",
+    "text": "Guides on devices, software, AI and staying safe online."
+  },
+  "contact": {
+    "title": "Send your message"
+  },
+  "vote": {
+    "title": "Vote",
+    "text": "Cast your vote for your favourite nominees."
+  },
+  "tickets": {
+    "title": "Tickets",
+    "text": "Get tickets to GetDigital events."
+  }
+}
