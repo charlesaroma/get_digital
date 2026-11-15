@@ -6,7 +6,6 @@ import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 import Button from "@/components/ui/Button";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { usePageCopy } from "@/store/tanstackStore/queries/site";
-import HexPattern from "./HexPattern";
 import PhotoFrame from "./PhotoFrame";
 
 export default function MissionBento({ showHeading = true, showLink = true }) {
@@ -47,11 +46,12 @@ export default function MissionBento({ showHeading = true, showLink = true }) {
             />
           </StaggerItem>
 
-          <StaggerItem as="article" className="relative overflow-hidden rounded-[1.75rem] bg-gd-navy-900 p-6 text-white sm:p-8 lg:col-span-5">
-            <HexPattern className="absolute -right-10 -bottom-10 h-56 w-72 text-gd-yellow-500/15" />
+          <StaggerItem as="article" className="relative overflow-hidden rounded-[1.75rem] border border-border bg-surface p-6 shadow-card sm:p-8 lg:col-span-5">
             <div className="relative">
-              <CardTop number={vision.number} title={vision.title} icon={Eye} dark />
-              <p className="mt-4 font-display text-h2 tracking-tight text-white">{vision.text}</p>
+              <CardTop number={vision.number} title={vision.title} icon={Eye} />
+              <p className="mt-4 font-display text-h2 tracking-tight text-foreground">
+                <span className="bg-[linear-gradient(transparent_62%,var(--color-gd-yellow-300)_62%)] box-decoration-clone">{vision.text}</span>
+              </p>
             </div>
           </StaggerItem>
 
