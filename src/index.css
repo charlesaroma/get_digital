@@ -1,0 +1,484 @@
+/*
+  GetDigital256 design system for Tailwind CSS v4.
+  Source of truth: Get Digital Brand Book, Edition 1.0 (colour: chapters 07 to 09, type: 10 and 11,
+  components and tokens: 13 and 14). Change values there first, then here.
+
+  Quick reference
+    Brand colours   bg-gd-yellow-500  text-gd-navy-900  border-gd-stone-200   (50 to 950)
+    Semantic        bg-background  bg-surface  text-foreground  text-muted  bg-primary  text-primary-foreground
+                    bg-secondary  text-link  ring-ring  text-success  bg-error-soft  ...
+    Type            font-display (Unbounded)  font-sans (Manrope, default)  font-mono (JetBrains Mono)
+                    text-display  text-h1 to text-h4  text-body-lg  text-body  text-small  text-label
+    Layout          container-gd  (centred, responsive side padding)
+    Dark mode       <html data-theme="dark">  and the dark: variant
+*/
+
+@import "tailwindcss";
+
+/* Dark mode follows the data-theme attribute set in index.html, not the OS setting. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* ------------------------------------------------------------------ */
+/* Fonts: self hosted, Latin subset, variable weight (public/fonts)    */
+/* ------------------------------------------------------------------ */
+@font-face {
+  font-family: "Unbounded";
+  src: url("/fonts/unbounded-latin-var.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/manrope-latin-var.woff2") format("woff2");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/jetbrains-mono-latin-var.woff2") format("woff2");
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ------------------------------------------------------------------ */
+/* Brand tokens                                                        */
+/* static: every variable is emitted, so plain CSS can use them too.   */
+/* ------------------------------------------------------------------ */
+@theme static {
+  /* Only brand colours are available. Tailwind's default palette is switched off on purpose. */
+  --color-*: initial;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  /* Digital Yellow: primary accent. 500 is the logo yellow. Never use 500 for text on white. */
+  --color-gd-yellow-50: #FFF9F1;
+  --color-gd-yellow-100: #FFF0D8;
+  --color-gd-yellow-200: #FFE2B4;
+  --color-gd-yellow-300: #FFD186;
+  --color-gd-yellow-400: #FEBE46;
+  --color-gd-yellow-500: #FAB30D;
+  --color-gd-yellow-600: #CD9204;
+  --color-gd-yellow-700: #A27200;
+  --color-gd-yellow-800: #7B5600;
+  --color-gd-yellow-900: #5B3F01;
+  --color-gd-yellow-950: #3B2700;
+
+  /* Midnight Navy: ink and dark surfaces. 900 is the logo navy. */
+  --color-gd-navy-50: #F6F6FC;
+  --color-gd-navy-100: #E8E9F2;
+  --color-gd-navy-200: #D1D3E1;
+  --color-gd-navy-300: #B1B3C4;
+  --color-gd-navy-400: #8B8DA2;
+  --color-gd-navy-500: #6B6D81;
+  --color-gd-navy-600: #525467;
+  --color-gd-navy-700: #3C3E50;
+  --color-gd-navy-800: #282A3B;
+  --color-gd-navy-900: #171828;
+  --color-gd-navy-950: #0A0B18;
+
+  /* Stone: warm alabaster and stone neutrals for surfaces, borders and dividers. */
+  --color-gd-stone-50: #FCF8F4;
+  --color-gd-stone-100: #F6F2EC;
+  --color-gd-stone-200: #EBE5DE;
+  --color-gd-stone-300: #DAD3CA;
+  --color-gd-stone-400: #B1ABA4;
+  --color-gd-stone-500: #86817A;
+  --color-gd-stone-600: #66615B;
+  --color-gd-stone-700: #4C4843;
+  --color-gd-stone-800: #34312D;
+  --color-gd-stone-900: #221F1B;
+  --color-gd-stone-950: #110F0C;
+
+  /* Status colours (warnings reuse the yellow ramp). */
+  --color-gd-success-50: #EAFAEC;
+  --color-gd-success-100: #D1F2D6;
+  --color-gd-success-400: #58BD72;
+  --color-gd-success-500: #03A14A;
+  --color-gd-success-600: #00823A;
+  --color-gd-success-700: #02672D;
+  --color-gd-error-50: #FEF2F0;
+  --color-gd-error-100: #FFE0DB;
+  --color-gd-error-400: #FE7367;
+  --color-gd-error-500: #EA3D38;
+  --color-gd-error-600: #C90F1A;
+  --color-gd-error-700: #A3010F;
+  --color-gd-info-50: #EFF6FE;
+  --color-gd-info-100: #D7EAFF;
+  --color-gd-info-400: #56AAFB;
+  --color-gd-info-500: #1289E7;
+  --color-gd-info-600: #006EBE;
+  --color-gd-info-700: #015798;
+
+  /* Typefaces */
+  --font-display: "Unbounded", ui-sans-serif, system-ui, "Segoe UI", sans-serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* Type scale. Headings scale fluidly from small phones to XL desktops. */
+  --text-display: clamp(2.75rem, 1.9rem + 3.6vw, 4.5rem);
+  --text-display--line-height: 1.05;
+  --text-display--letter-spacing: -0.03em;
+  --text-display--font-weight: 700;
+  --text-h1: clamp(2.25rem, 1.65rem + 2.6vw, 3.5rem);
+  --text-h1--line-height: 1.08;
+  --text-h1--letter-spacing: -0.03em;
+  --text-h1--font-weight: 700;
+  --text-h2: clamp(1.875rem, 1.6rem + 1.2vw, 2.5rem);
+  --text-h2--line-height: 1.15;
+  --text-h2--letter-spacing: -0.02em;
+  --text-h2--font-weight: 600;
+  --text-h3: clamp(1.5rem, 1.38rem + 0.5vw, 1.75rem);
+  --text-h3--line-height: 1.22;
+  --text-h3--letter-spacing: -0.02em;
+  --text-h3--font-weight: 600;
+  --text-h4: clamp(1.25rem, 1.2rem + 0.2vw, 1.375rem);
+  --text-h4--line-height: 1.36;
+  --text-h4--letter-spacing: -0.01em;
+  --text-h4--font-weight: 700;
+  --text-body-lg: 1.125rem;
+  --text-body-lg--line-height: 1.56;
+  --text-body: 1rem;
+  --text-body--line-height: 1.625;
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.43;
+  --text-label: 0.75rem;
+  --text-label--line-height: 1.33;
+  --text-label--letter-spacing: 0.12em;
+  --text-label--font-weight: 700;
+
+  /* Radius: soft corners taken from the curves of the mark. */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* Elevation: soft, wide shadows tinted with the navy ink, never glows. */
+  --shadow-card: 0 1px 2px rgb(23 24 40 / 0.05), 0 12px 32px -12px rgb(23 24 40 / 0.10);
+  --shadow-lift: 0 2px 4px rgb(23 24 40 / 0.06), 0 24px 48px -16px rgb(23 24 40 / 0.18);
+  --shadow-inset-glass: inset 0 1px 0 rgb(255 255 255 / 0.6);
+
+  /* Breakpoints: Tailwind defaults (sm 640, md 768, lg 1024, xl 1280, 2xl 1536)
+     plus small phones and XL desktop screens. */
+  --breakpoint-xs: 23.4375rem;
+  --breakpoint-3xl: 120rem;
+
+  /* Motion */
+  --ease-brand: cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-fade-in: gd-fade-in 0.5s var(--ease-brand) both;
+  --animate-fade-up: gd-fade-up 0.6s var(--ease-brand) both;
+
+  @keyframes gd-fade-in {
+    from { opacity: 0; }
+  }
+  @keyframes gd-fade-up {
+    from { opacity: 0; transform: translateY(16px); }
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Semantic tokens: use these in components, never raw hex values.     */
+/* Light values on :root, dark values on [data-theme="dark"].          */
+/* Brand book names: text = foreground, text-muted = muted,            */
+/* text-subtle = subtle. Everything else matches chapter 14.           */
+/* ------------------------------------------------------------------ */
+:root {
+  --background: var(--color-gd-stone-50);
+  --surface: var(--color-white);
+  --surface-muted: var(--color-gd-stone-100);
+  --border: var(--color-gd-stone-200);
+  --border-strong: var(--color-gd-stone-300);
+  --foreground: var(--color-gd-navy-900);
+  --muted: var(--color-gd-navy-600);
+  --subtle: var(--color-gd-navy-500);
+  --primary: var(--color-gd-yellow-500);
+  --primary-hover: var(--color-gd-yellow-600);
+  --primary-foreground: var(--color-gd-navy-900);
+  --primary-soft: var(--color-gd-yellow-100);
+  --secondary: var(--color-gd-navy-900);
+  --secondary-hover: var(--color-gd-navy-800);
+  --secondary-foreground: var(--color-white);
+  --link: var(--color-gd-yellow-800);
+  --ring: var(--color-gd-navy-900);
+  --success: var(--color-gd-success-600);
+  --success-soft: var(--color-gd-success-50);
+  --error: var(--color-gd-error-600);
+  --error-soft: var(--color-gd-error-50);
+  --info: var(--color-gd-info-600);
+  --info-soft: var(--color-gd-info-50);
+  --warning: var(--color-gd-yellow-800);
+  --warning-soft: var(--color-gd-yellow-50);
+}
+
+[data-theme="dark"] {
+  --background: var(--color-gd-navy-950);
+  --surface: var(--color-gd-navy-900);
+  --surface-muted: var(--color-gd-navy-800);
+  --border: var(--color-gd-navy-700);
+  --border-strong: var(--color-gd-navy-600);
+  --foreground: var(--color-gd-navy-50);
+  --muted: var(--color-gd-navy-300);
+  --subtle: var(--color-gd-navy-400);
+  --primary: var(--color-gd-yellow-500);
+  --primary-hover: var(--color-gd-yellow-400);
+  --primary-foreground: var(--color-gd-navy-900);
+  --primary-soft: var(--color-gd-yellow-950);
+  --secondary: var(--color-gd-navy-50);
+  --secondary-hover: var(--color-gd-navy-200);
+  --secondary-foreground: var(--color-gd-navy-900);
+  --link: var(--color-gd-yellow-400);
+  --ring: var(--color-gd-yellow-500);
+  --success: var(--color-gd-success-400);
+  --success-soft: var(--color-gd-success-700);
+  --error: var(--color-gd-error-400);
+  --error-soft: var(--color-gd-error-700);
+  --info: var(--color-gd-info-400);
+  --info-soft: var(--color-gd-info-700);
+  --warning: var(--color-gd-yellow-400);
+  --warning-soft: var(--color-gd-yellow-900);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-soft: var(--primary-soft);
+  --color-secondary: var(--secondary);
+  --color-secondary-hover: var(--secondary-hover);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-link: var(--link);
+  --color-ring: var(--ring);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-error: var(--error);
+  --color-error-soft: var(--error-soft);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+}
+
+/* ------------------------------------------------------------------ */
+/* Base styles                                                         */
+/* ------------------------------------------------------------------ */
+@layer base {
+  html {
+    color-scheme: light;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-padding-top: 5rem;
+  }
+  html[data-theme="dark"] {
+    color-scheme: dark;
+  }
+  body {
+    min-height: 100dvh;
+    font-family: var(--font-sans);
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+  h1 {
+    font-size: var(--text-h1);
+    line-height: var(--text-h1--line-height);
+    letter-spacing: var(--text-h1--letter-spacing);
+    font-weight: var(--text-h1--font-weight);
+  }
+  h2 {
+    font-size: var(--text-h2);
+    line-height: var(--text-h2--line-height);
+    letter-spacing: var(--text-h2--letter-spacing);
+    font-weight: var(--text-h2--font-weight);
+  }
+  h3 {
+    font-size: var(--text-h3);
+    line-height: var(--text-h3--line-height);
+    letter-spacing: var(--text-h3--letter-spacing);
+    font-weight: var(--text-h3--font-weight);
+  }
+  h4 {
+    font-size: var(--text-h4);
+    line-height: var(--text-h4--line-height);
+    letter-spacing: var(--text-h4--letter-spacing);
+    font-weight: var(--text-h4--font-weight);
+  }
+  p {
+    text-wrap: pretty;
+  }
+
+  a {
+    text-underline-offset: 0.2em;
+  }
+
+  ::selection {
+    background-color: var(--color-gd-yellow-300);
+    color: var(--color-gd-navy-900);
+  }
+
+  /* Every clickable thing shows the pointer (ui-ux-pro-max web rule). */
+  button:not(:disabled), [role="button"], [role="tab"], a[href], summary, select,
+  label:has(input[type="checkbox"], input[type="radio"]) {
+    cursor: pointer;
+  }
+  button:disabled, [aria-disabled="true"] {
+    cursor: not-allowed;
+  }
+  /* Removes the 300ms tap delay on older mobile browsers. */
+  a, button, input, select, textarea, label, summary {
+    touch-action: manipulation;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Utilities                                                           */
+/* ------------------------------------------------------------------ */
+
+/* Page width container: 80rem max, side padding grows from phones to desktops. */
+@utility container-gd {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 0.6rem + 2vw, 2.5rem);
+}
+
+/* Section label (small caps style eyebrow text) */
+@utility eyebrow {
+  font-size: var(--text-label);
+  line-height: var(--text-label--line-height);
+  letter-spacing: var(--text-label--letter-spacing);
+  font-weight: var(--text-label--font-weight);
+  text-transform: uppercase;
+}
+
+/* ------------------------------------------------------------------ */
+/* Components that need real CSS (native dialog, drawer, keyframes)    */
+/* ------------------------------------------------------------------ */
+@layer components {
+  html:has(dialog[open]) {
+    overflow: hidden;
+  }
+
+  /* Modal: bottom sheet on phones, centred card from 640px */
+  .gd-dialog {
+    margin: auto auto 0;
+    width: 100%;
+    max-width: 100%;
+    max-height: min(92dvh, 880px);
+    padding: 0;
+    border: 0;
+    border-radius: 1.5rem 1.5rem 0 0;
+    background: var(--color-surface);
+    color: var(--color-foreground);
+    box-shadow: var(--shadow-lift);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .gd-dialog[open] {
+    animation: gd-sheet-in 0.38s var(--ease-brand) both;
+  }
+  @media (min-width: 40rem) {
+    .gd-dialog {
+      margin: auto;
+      width: min(100% - 2rem, 38rem);
+      border-radius: 1.75rem;
+    }
+    .gd-dialog[open] {
+      animation-name: gd-pop-in;
+    }
+  }
+
+  /* Slide over menu */
+  .gd-drawer {
+    margin: 0 0 0 auto;
+    height: 100dvh;
+    max-height: 100dvh;
+    width: min(88vw, 23rem);
+    max-width: none;
+    padding: 0;
+    border: 0;
+    background: var(--color-background);
+    color: var(--color-foreground);
+    box-shadow: var(--shadow-lift);
+    overscroll-behavior: contain;
+  }
+  .gd-drawer[open] {
+    animation: gd-drawer-in 0.36s var(--ease-brand) both;
+  }
+  .gd-drawer[open] .gd-drawer-item {
+    animation: gd-item-in 0.4s var(--ease-brand) both;
+    animation-delay: calc(0.08s + var(--i) * 35ms);
+  }
+
+  .gd-dialog::backdrop,
+  .gd-drawer::backdrop {
+    background: rgb(23 24 40 / 0.45);
+    backdrop-filter: blur(4px);
+    animation: gd-backdrop-in 0.25s ease both;
+  }
+
+  /* AI Lab typing indicator */
+  .gd-typing-dot {
+    animation: gd-typing 1s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 150ms);
+  }
+
+  /* Select arrow */
+  .gd-select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23525467' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  }
+
+  @keyframes gd-sheet-in {
+    from { transform: translateY(100%); }
+  }
+  @keyframes gd-pop-in {
+    from { opacity: 0; transform: translateY(12px) scale(0.98); }
+  }
+  @keyframes gd-drawer-in {
+    from { transform: translateX(100%); }
+  }
+  @keyframes gd-item-in {
+    from { opacity: 0; transform: translateX(16px); }
+  }
+  @keyframes gd-backdrop-in {
+    from { opacity: 0; }
+  }
+  @keyframes gd-typing {
+    0%, 100% { opacity: 0.3; transform: translateY(0); }
+    50% { opacity: 1; transform: translateY(-3px); }
+  }
+}
