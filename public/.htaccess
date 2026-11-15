@@ -1,0 +1,62 @@
+# GetDigital256 on Apache or cPanel hosting (needs mod_rewrite).
+# Upload the contents of dist/ (this file included) to the site root.
+Options -MultiViews
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Force HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # www.gd256.org to gd256.org
+  RewriteCond %{HTTP_HOST} ^www\.gd256\.org$ [NC]
+  RewriteRule ^ https://gd256.org%{REQUEST_URI} [L,R=301]
+
+  # Old WordPress blog posts now live under /blogs/<slug>
+RewriteRule ^learn\-ai\-on\-a\-phone/?$ /blogs/learn-ai-on-a-phone [L,R=301]
+RewriteRule ^ai\-skills\-ugandan\-job\-ads/?$ /blogs/ai-skills-ugandan-job-ads [L,R=301]
+RewriteRule ^ai\-for\-teachers\-in\-uganda/?$ /blogs/ai-for-teachers-in-uganda [L,R=301]
+RewriteRule ^what\-to\-do\-before\-job\-hunting\-in\-uganda/?$ /blogs/what-to-do-before-job-hunting-in-uganda [L,R=301]
+
+  # Old WordPress paths
+  RewriteCond %{THE_REQUEST} \s/index\.(html|php)[\s?]
+  RewriteRule ^ / [L,R=301]
+  RewriteRule ^home/?$ / [L,R=301]
+  RewriteRule ^about\-us/?$ /about [L,R=301]
+  RewriteRule ^contact\-us/?$ /contact [L,R=301]
+  RewriteRule ^(blog|category|tag|author|page|feed)(/.*)?$ /blogs [L,R=301]
+  RewriteRule ^news(/.*)?$ /press [L,R=301]
+  RewriteRule ^voting/?$ /vote [L,R=301]
+  RewriteRule ^(ticket|events)/?$ /tickets [L,R=301]
+  RewriteRule ^free\-ai\-course/?$ /#free-ai-course [L,R=301,NE]
+  RewriteRule ^(wp\-admin|wp\-login\.php)(/.*)?$ / [L,R=301]
+
+  # Remove trailing slashes (old WordPress URLs ended with /)
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.+)/$ /$1 [L,R=301]
+
+  # Single page app fallback
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  <FilesMatch "^index\.html$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+  <FilesMatch "\.woff2$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType application/manifest+json .webmanifest
+  AddType font/woff2 .woff2
+</IfModule>
