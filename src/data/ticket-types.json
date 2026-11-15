@@ -1,0 +1,3 @@
+[
+  { "id": "t1", "eventId": "e1", "name": "General", "price": 0, "currency": "UGX", "capacity": 100, "sold": 0, "position": 1, "active": true }
+]
