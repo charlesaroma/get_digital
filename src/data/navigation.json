@@ -1,0 +1,58 @@
+{
+  "main": [
+    {
+      "title": "Home",
+      "target": {
+        "page": "/"
+      }
+    },
+    {
+      "title": "About",
+      "target": {
+        "page": "/about"
+      }
+    },
+    {
+      "title": "Partners",
+      "target": {
+        "page": "/partners"
+      }
+    },
+    {
+      "title": "Press",
+      "target": {
+        "page": "/press"
+      }
+    },
+    {
+      "title": "Blogs",
+      "target": {
+        "page": "/blogs"
+      }
+    },
+    {
+      "title": "Vote",
+      "target": {
+        "page": "/vote"
+      }
+    },
+    {
+      "title": "Tickets",
+      "target": {
+        "page": "/tickets"
+      }
+    },
+    {
+      "title": "Contact",
+      "target": {
+        "page": "/contact"
+      }
+    }
+  ],
+  "cta": {
+    "title": "Free AI Learning",
+    "target": {
+      "page": "/#free-ai-course"
+    }
+  }
+}
