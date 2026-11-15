@@ -1,0 +1,5 @@
+[
+  { "id": "ai-digital-tools", "name": "AI & Digital Tools", "slug": "ai-digital-tools", "position": 1 },
+  { "id": "digital-skills", "name": "Digital Skills & Online Work", "slug": "digital-skills-online-work", "position": 2 },
+  { "id": "uganda-tech", "name": "Uganda Tech", "slug": "uganda-tech", "position": 3 }
+]
