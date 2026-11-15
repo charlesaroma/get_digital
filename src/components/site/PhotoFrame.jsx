@@ -6,7 +6,7 @@ import { useState } from "react";
 import { cn } from "@/utils/cn";
 import HexPattern from "./HexPattern";
 
-export default function PhotoFrame({ src, alt = "", caption, ratio = "4 / 3", tone = "light", priority = false, className }) {
+export default function PhotoFrame({ src, alt = "", caption, ratio = "4 / 3", position = "center", tone = "light", priority = false, className }) {
   const [failed, setFailed] = useState(false);
   const dark = tone === "dark";
   const showPhoto = src && !failed;
@@ -28,6 +28,7 @@ export default function PhotoFrame({ src, alt = "", caption, ratio = "4 / 3", to
           decoding="async"
           onError={() => setFailed(true)}
           className="absolute inset-0 size-full object-cover"
+          style={{ objectPosition: position }}
         />
       ) : (
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 p-6 text-center">
