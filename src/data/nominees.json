@@ -1,0 +1,4 @@
+[
+  { "id": "n1", "pollId": "poll1", "name": "Sample Nominee A", "bio": "Placeholder.", "image": null, "position": 1 },
+  { "id": "n2", "pollId": "poll1", "name": "Sample Nominee B", "bio": "Placeholder.", "image": null, "position": 2 }
+]
