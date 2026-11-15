@@ -9,7 +9,7 @@ import { usePageCopy } from "@/store/tanstackStore/queries/site";
 export default function Partners() {
   const { partners } = usePageCopy("home");
   return (
-    <section aria-labelledby="partners-title" className="border-y border-border bg-gd-stone-100/70 py-16 sm:py-20 lg:py-28 dark:bg-gd-navy-900/40">
+    <section aria-labelledby="partners-title" className="py-16 sm:py-20 lg:py-28">
       <div className="container-gd grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-12">
         <Reveal className="lg:col-span-5 xl:col-span-4">
           <div className="lg:sticky lg:top-28">
