@@ -354,6 +354,16 @@
     outline-offset: 2px;
   }
 
+  /* Sticky site header: h-16 / lg:h-[4.5rem] plus its 1px bottom border (see SiteHeader). */
+  :root {
+    --header-h: calc(4rem + 1px);
+  }
+  @media (min-width: 64rem) {
+    :root {
+      --header-h: calc(4.5rem + 1px);
+    }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     *, ::before, ::after {
       animation-duration: 0.01ms !important;
@@ -389,6 +399,16 @@
 /* Components that need real CSS (native dialog, drawer, keyframes)    */
 /* ------------------------------------------------------------------ */
 @layer components {
+  /* Hexagon cut, flat-top, to match HexPattern and the logo nodes. */
+  .gd-hex {
+    clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  }
+  /* Photo corners cut on the hex angle (top-right and bottom-left). */
+  .gd-chamfer {
+    --c: clamp(1.5rem, 7vw, 3.5rem);
+    clip-path: polygon(0 0, calc(100% - var(--c)) 0, 100% var(--c), 100% 100%, var(--c) 100%, 0 calc(100% - var(--c)));
+  }
+
   /* Skeleton: flat tinted block with a soft light sweep. Sweep moves with transform only. */
   .gd-skeleton {
     position: relative;
