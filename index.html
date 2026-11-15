@@ -1,12 +1,132 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GetDigital256</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>GetDigital256 | Technology Made Simple</title>
+    <meta name="description" content="GetDigital256 is a Ugandan not-for-profit making technology simple, with practical tech guides, digital skills training and free AI learning for communities across Uganda." />
+    <meta name="theme-color" content="#FCF8F4" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0A0B18" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="application-name" content="GetDigital256" />
+    <meta name="apple-mobile-web-app-title" content="GetDigital" />
+
+    <!-- Brand icons -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Brand fonts, self hosted (see src/index.css) -->
+    <link rel="preload" href="/fonts/manrope-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/unbounded-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+
+    <!-- Social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GetDigital256" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:title" content="GetDigital256 | Technology Made Simple" />
+    <meta property="og:description" content="Practical tech guides, digital skills training and free AI learning for communities across Uganda." />
+    <meta property="og:image" content="https://gd256.org/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="GetDigital256: Technology Made Simple." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@GetDigital_256" />
+    <meta name="twitter:title" content="GetDigital256 | Technology Made Simple" />
+    <meta name="twitter:description" content="Practical tech guides, digital skills training and free AI learning for communities across Uganda." />
+    <meta name="twitter:image" content="https://gd256.org/og-image.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "NGO",
+        "name": "GetDigital256",
+        "alternateName": "Get Digital",
+        "legalName": "GetDigital LTD",
+        "slogan": "Technology Made Simple.",
+        "url": "https://gd256.org",
+        "logo": "https://gd256.org/logo/gd-logo-primary-light.png",
+        "image": "https://gd256.org/og-image.png",
+        "email": "getdigital256@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Amara Hub Building, Plot 62, Lira to Gulu Road",
+          "postOfficeBoxNumber": "331582",
+          "addressLocality": "Lira",
+          "addressCountry": "UG"
+        },
+        "sameAs": ["https://x.com/GetDigital_256", "https://www.youtube.com/@GetDigital256"]
+      }
+    </script>
+
+    <!-- Theme before first paint: an explicit choice saved under "gd-theme", otherwise light. -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("gd-theme");
+          document.documentElement.dataset.theme = t === "dark" ? "dark" : "light";
+        } catch (e) {}
+      })();
+    </script>
+
+    <!--
+      Logo loader styles. They live here, not in src/index.css, so the boot loader is styled
+      on the very first paint (in dev, Vite injects index.css from JS). The React
+      <LogoLoader /> (src/components/motion/LogoLoader.jsx) reuses these classes.
+    -->
+    <style>
+      html { background: #FCF8F4; }
+      html[data-theme="dark"] { background: #0A0B18; }
+      .gd-loader { display: grid; place-items: center; color: #171828; background: #FCF8F4; }
+      html[data-theme="dark"] .gd-loader { color: #F6F6FC; background: #0A0B18; }
+      .gd-loader--screen { position: fixed; inset: 0; z-index: 2147483000; transition: opacity 0.45s ease, visibility 0.45s ease; }
+      .gd-loader--screen.is-done { opacity: 0; visibility: hidden; }
+      .gd-loader--inline, html[data-theme="dark"] .gd-loader--inline { min-height: min(60vh, 560px); background: transparent; }
+      .gd-loader__inner { display: flex; flex-direction: column; align-items: center; gap: clamp(16px, 3vw, 24px); }
+      .gd-mark { display: block; width: clamp(88px, 24vw, 132px); height: auto; overflow: visible; }
+      .gd-loader--inline .gd-mark { width: clamp(64px, 16vw, 88px); }
+      .gd-mark__g, .gd-mark__d, .gd-mark__n { transform-box: fill-box; transform-origin: center; }
+      .gd-mark__g { animation: gd-g-in 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+      .gd-mark__d { animation: gd-d-in 0.8s 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+      .gd-mark__n { animation: gd-n-in 0.4s calc(0.7s + var(--i) * 55ms) cubic-bezier(0.3, 1.5, 0.6, 1) both, gd-n-pulse 1.8s calc(1.5s + var(--i) * 90ms) ease-in-out infinite; }
+      .gd-loader__bar { position: relative; width: clamp(96px, 26vw, 148px); height: 3px; border-radius: 999px; overflow: hidden; background: rgba(23, 24, 40, 0.1); }
+      html[data-theme="dark"] .gd-loader__bar { background: rgba(246, 246, 252, 0.14); }
+      .gd-loader--inline .gd-loader__bar { width: clamp(72px, 18vw, 104px); }
+      .gd-loader__bar::after { content: ""; position: absolute; inset: 0 auto 0 0; width: 40%; border-radius: inherit; background: #FAB30D; animation: gd-bar 1.2s ease-in-out infinite; }
+      .gd-sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+      @keyframes gd-g-in { from { opacity: 0; transform: rotate(-120deg) scale(0.6); } }
+      @keyframes gd-d-in { from { opacity: 0; transform: translateX(22%); } }
+      @keyframes gd-n-in { from { opacity: 0; transform: scale(0); } }
+      @keyframes gd-n-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+      @keyframes gd-bar { from { transform: translateX(-100%); } to { transform: translateX(250%); } }
+      @media (prefers-reduced-motion: reduce) {
+        .gd-mark__g, .gd-mark__d, .gd-mark__n, .gd-loader__bar::after { animation: none; }
+        .gd-loader--screen { transition: none; }
+      }
+    </style>
   </head>
   <body>
+    <!-- Boot loader: shown until the first route has rendered (src/utils/bootLoader.js removes it). -->
+    <div id="gd-boot" class="gd-loader gd-loader--screen" role="status" aria-live="polite">
+      <div class="gd-loader__inner">
+        <svg class="gd-mark" viewBox="0 0 88.55 56.34" width="132" height="84" aria-hidden="true" focusable="false"><g class="gd-mark__g" fill="currentColor"><path d="M55.3 31.14C55.16 32.38 54.92 33.62 54.59 34.86C54.58 34.9 54.57 34.94 54.56 34.98C54.1 36.66 53.51 38.26 52.79 39.8C51.7 42.09 50.3 44.21 48.58 46.17C48.26 46.53 47.93 46.89 47.59 47.23C42.89 52.07 37.06 54.67 30.28 55.38C30.03 55.4 29.78 55.34 29.53 55.32C29.23 55.35 28.94 55.36 28.65 55.37C28.58 55.38 28.52 55.38 28.46 55.38L28.45 55.38C14.11 55.84 1.86 44.19 0.64 30.14C0.5 28.57 0.5 26.97 0.65 25.35C0.82 23.52 1.21 21.72 1.78 19.99C1.78 19.96 1.79 19.94 1.8 19.92C3.78 13.9 7.94 8.57 12.99 5.08C15.76 3.16 18.8 1.79 21.88 1.16C22.03 1.13 22.17 1.1 22.32 1.08C24.31 0.72 26.31 0.51 28.33 0.51L29.46 0.51L29.58 0.65L33.88 5.26L29.58 9.62L29.58 9.75L33.19 9.75C32.14 9.75 31.08 9.75 30.03 9.76C29.33 9.76 28.63 9.76 27.93 9.76C26.05 9.77 24.23 10.05 22.51 10.58C21.93 10.75 21.36 10.96 20.8 11.19C20.8 11.19 20.8 11.19 20.8 11.19C15.6 13.37 11.63 17.85 10.34 23.61C8.81 30.49 10.46 36.59 15.72 41.53C18.69 44.31 22.24 45.81 26.27 46.21C26.48 46.23 26.67 46.24 26.87 46.26C27.76 46.28 28.64 46.29 29.53 46.31C31.15 45.92 32.82 45.78 34.41 45.2C39.61 43.3 42.99 39.74 44.98 34.87C45.14 34.46 45.29 34.05 45.44 33.64C45.49 33.47 45.55 33.31 45.6 33.14C45.87 32.31 45.58 32.19 44.98 32.19L44.8 32.19C41.69 32.21 38.59 32.21 35.49 32.21C35.03 32.21 34.57 32.14 34.12 32.1L33.69 32.1C33.24 32.27 32.78 32.27 32.32 32.11C31.09 32.12 29.86 32.13 28.63 32.14C28.67 32.06 28.65 32.01 28.57 31.98C30.33 29.92 32.11 27.87 33.87 25.8C34.51 25.06 35.15 24.32 35.78 23.57C36.13 23.16 36.52 23.11 37.01 23.11C39.28 23.12 41.56 23.12 43.83 23.12C44.21 23.12 44.6 23.12 44.98 23.12C47.99 23.13 51.02 23.12 54.04 23.11C54.26 23.11 54.45 23.13 54.59 23.19C54.9 23.3 55.05 23.56 55.08 24.01C55.11 24.3 55.14 24.59 55.17 24.88C55.2 25.14 55.23 25.39 55.25 25.64C55.49 27.49 55.5 29.32 55.3 31.14"/><path d="M29.58 0.51L29.58 0.65L29.46 0.51ZM29.58 0.51"/></g><g class="gd-mark__d" fill="#FAB30D"><path d="M29.58 0.5L42.03 0.5C37.88 0.5 33.73 0.51 29.58 0.51ZM29.58 0.5"/><path d="M68.4 0.53C68.1 0.51 67.8 0.5 67.5 0.5L68.13 0.5C68.23 0.5 68.32 0.51 68.4 0.53"/><path d="M88.01 27.08C88.01 27.18 88 27.28 87.99 27.37C87.66 32.3 85.97 36.91 82.96 41.16C82.63 41.62 82.3 42.07 81.95 42.49C81.9 42.55 81.86 42.61 81.82 42.66C80.65 44.07 79.35 45.37 77.97 46.54C77.93 46.57 77.89 46.61 77.84 46.64C75.12 48.85 71.99 50.48 68.48 51.6C67.64 51.94 66.78 52.2 65.9 52.39C65.72 52.42 65.54 52.45 65.36 52.48C64.25 52.64 63.14 52.75 62.02 52.8C61.15 52.82 60.28 52.83 59.41 52.84C59.38 52.84 59.35 52.83 59.33 52.83C55.56 52.72 51.78 52.6 48.01 52.49C48.44 51.78 49.01 51.29 49.49 50.74C51.21 48.78 52.96 46.85 54.69 44.9C54.82 44.75 54.96 44.59 55.1 44.44C55.55 43.93 56.01 43.69 56.71 43.69L56.88 43.69C57.93 43.72 58.98 43.75 60.03 43.78C68.03 44 75.11 39.32 77.65 32.12C77.81 31.68 77.95 31.23 78.07 30.76C78.39 29.56 78.6 28.37 78.71 27.21C79.19 21.92 77.46 17.13 73.29 13.02C71.88 11.64 70.33 10.56 68.64 9.75L55.35 9.75L55.22 20.53L50.59 23.17L45.73 20.53L45.73 9.75L29.58 9.75L29.58 9.62L33.88 5.26L29.58 0.65L29.58 0.51C33.73 0.51 37.88 0.5 42.03 0.5L67.5 0.5C67.8 0.5 68.11 0.51 68.4 0.53C71.73 0.71 74.93 1.87 77.55 3.94C77.57 3.95 77.58 3.96 77.6 3.98C78.44 4.64 79.23 5.35 79.99 6.1C80.9 7.01 81.76 7.99 82.54 9.03C82.55 9.03 82.55 9.04 82.55 9.04C85.87 13.64 87.87 19.27 88.03 25.1C88.05 25.76 88.04 26.42 88.01 27.08"/></g><g fill="currentColor"><path class="gd-mark__n" style="--i:0" d="M74.05 14.3L73.68 14.3L72.96 13.69L72.83 13.06L73.17 13.06L74.05 14.01ZM72.83 12.39L72.12 12.39L72.52 13.73L74.05 14.99L74.6 14.99L74.6 14.3ZM72.83 12.39"/><path class="gd-mark__n" style="--i:1" d="M71.28 16.84L70.04 16.84L69.51 15.92L69.85 14.99L70.84 15.19L71.49 16.1ZM68.12 12.44L67.2 12.31L66.8 11.75L67.1 11.29L67.74 11.33L68.22 11.98ZM71.1 14.28L69.71 14.08L68.91 13.06L69.24 12.08L67.92 10.7L66.57 10.7L65.77 11.69L66.87 12.94L68.18 13.22L68.91 14.3L68.43 15.82L69.51 17.85L71.86 17.91L72.52 16.33ZM71.1 14.28"/><path class="gd-mark__n" style="--i:2" d="M64.12 18.97L63.06 18.42L63.06 17.32L64.12 16.71L65.06 17.19L65.24 18.38ZM64.12 15.62L62.09 16.8L62.09 18.89L64.32 20.07L66.15 19.09L66.15 16.8ZM64.12 15.62"/><path class="gd-mark__n" style="--i:3" d="M77.64 19.76L76.65 19.21L76.14 17.83L76.14 16.53L76.75 17.53L76.58 17.51L76.58 17.89L76.93 18.89L77.4 18.89ZM77.64 19.76"/><path class="gd-mark__n" style="--i:4" d="M77.97 20.53L77.95 20.54C78 20.71 78.05 20.89 78.09 21.08ZM78.3 21.94L78.22 21.62C78.24 21.73 78.27 21.83 78.29 21.94L78.29 21.94ZM78.35 29.55C78.3 29.85 78.24 30.15 78.17 30.44L78.4 29.57ZM78.53 23.44C78.54 23.51 78.55 23.57 78.55 23.64L78.57 23.38ZM78.57 28.09L78.57 28.09L78.57 28.04C78.57 28.06 78.57 28.08 78.57 28.09"/><path class="gd-mark__n" style="--i:5" d="M66.32 27.08L65.01 27.08L64.32 25.91L65.01 24.64L66.15 24.64L66.87 25.91ZM60.23 26.73L59.24 26.73L58.88 25.91L59.24 25.19L60.3 25.19L60.6 25.91ZM66.83 23.46L64.12 23.46L63.31 25.31L61.51 25.35L60.81 23.85L58.66 23.89L57.64 25.91L58.66 27.87L60.92 27.87L61.62 26.49L63.31 26.49L64.32 28.35L66.87 28.35L68.18 25.98ZM66.83 23.46"/><path class="gd-mark__n" style="--i:6" d="M76.6 27.08L75.33 28.35L74.05 27.28L74.05 24.64L75.47 23.46L76.6 24.64ZM75.33 34.25L74.56 34.96L73.65 34.57L73.87 33.19L75.07 32.32L75.58 32.76ZM74.05 18.58L73.76 17.32L74.6 16.84L75.58 18.14L75.73 18.97L75.1 19.56ZM70.84 31.34L69.51 32.32L68.18 31.58L68.18 29.57L69.67 28.58L70.84 29.49ZM70.84 22.44L69.71 23.3L68.18 22.28L68.18 20.27L69.46 19.56L70.84 20.51ZM78.37 26.79L77.79 27.75L77.28 27.1L77.28 24.74L77.79 24.03L78.46 25.16L78.55 23.64C78.55 23.57 78.54 23.51 78.53 23.44L78.3 23.83L77.93 23.05L77.93 21.67L78.29 21.94C78.27 21.83 78.24 21.73 78.22 21.62L78.1 21.07C78.05 20.89 78 20.71 77.95 20.54L77.39 20.92L77.53 23.1L76.89 23.87L75.64 22.57L75.64 20.53L76.42 19.85L76.05 17.83L74.41 15.82L72.92 16.53L73.23 19.05L74.82 20.51L74.82 22.67L73.57 23.68L71.97 22.53L71.97 20.03L69.46 18.34L67.1 19.64L67.1 23.03L69.71 24.68L71.55 23.38L73.05 24.5L73.07 27.24L71.57 28.48L69.64 27.1L67.1 28.82L67.1 32.28L69.71 33.66L71.88 31.95L71.92 29.67L73.56 28.29L74.87 29.31L74.87 31.42L73.21 32.74L72.88 35.4L74.36 36.14L75.98 34.41L76.05 34.03L76.44 32.03L75.67 31.36L75.67 29.25L76.98 28.03L77.48 28.66L77.33 30.79L77.88 31.49L78.16 30.45L78.17 30.44C78.24 30.15 78.3 29.85 78.35 29.55L78.13 29.47L77.86 30.28L77.97 28.6L78.57 28.09C78.57 28.08 78.57 28.06 78.57 28.04L78.57 27.12ZM78.37 26.79"/><path class="gd-mark__n" style="--i:7" d="M77.73 32.36L77.27 33.29L77.26 33.3L77.26 33.31L77.13 32.96L76.63 33.97L76.65 34.17L76.72 34.51C76.67 34.62 76.61 34.73 76.56 34.84L76.05 35.4L76.1 34.4L76.78 32.59L77.62 31.87L77.69 32.16ZM77.73 32.36"/><path class="gd-mark__n" style="--i:8" d="M65.01 34.36L64.15 34.96L63.3 34.44L63.3 33.44L64.23 32.89L65.01 33.44ZM64.11 31.58L62.09 32.71L62.09 35.12L64.11 36.3L66.15 35.1L66.15 32.78ZM64.11 31.58"/><path class="gd-mark__n" style="--i:9" d="M76.75 34.63L76.56 34.84C76.61 34.73 76.67 34.62 76.72 34.51ZM76.75 34.63"/><path class="gd-mark__n" style="--i:10" d="M70.84 36.87L69.71 36.87L69.35 35.92L70 34.96L71.17 34.96L71.46 35.75ZM67.85 40.32L67.1 40.32L66.87 40.12L67.41 39.3L68.03 39.3L68.18 39.71ZM71.82 33.76L69.69 33.96L68.32 36.14L69 37.48L68.18 38.73L66.9 38.73L65.79 40.12L66.56 41.17L68.25 40.95L69.31 39.81L68.98 38.94L69.74 37.7L71.23 37.6L72.44 35.59ZM71.82 33.76"/><path class="gd-mark__n" style="--i:11" d="M73.76 38.21L73.39 38.71L72.83 38.71L73.1 38.08L73.57 37.72L74.05 37.72ZM73.67 37.03L72.23 38.73L72.23 39.3L73.07 39.3L74.27 38.05L74.56 36.87ZM73.67 37.03"/></g></svg>
+        <span class="gd-loader__bar" aria-hidden="true"></span>
+        <span class="gd-sr">Loading GetDigital256</span>
+      </div>
+    </div>
+    <script>
+      // Safety net: never leave the boot loader up if the app fails to start.
+      setTimeout(function () {
+        var el = document.getElementById("gd-boot");
+        if (el) el.remove();
+      }, 12000);
+    </script>
+    <noscript>
+      <p style="padding: 24px; font-family: system-ui, sans-serif">GetDigital256 needs JavaScript to run. Please enable it in your browser.</p>
+      <style>#gd-boot { display: none; }</style>
+    </noscript>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
