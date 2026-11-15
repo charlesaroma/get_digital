@@ -5,7 +5,7 @@ import PageHeader from "@/components/site/PageHeader";
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
 import EmptyState from "@/components/ui/EmptyState";
-import Skeleton from "@/components/ui/Skeleton";
+import { SkeletonGroup, SkeletonPanel } from "@/components/ui/Skeleton";
 import usePageMeta from "@/seo/usePageMeta";
 import { useNominees, usePageCopy, usePolls } from "@/store/tanstackStore/queries/site";
 import { formatDate } from "@/utils/format";
@@ -23,7 +23,9 @@ export default function VotePage() {
       <section aria-label="Polls" className="py-12 sm:py-16 lg:py-20">
         <div className="container-gd max-w-5xl">
           {polls.isPending ? (
-            <Skeleton className="h-40 w-full rounded-2xl" />
+            <SkeletonGroup label="Loading polls">
+              <SkeletonPanel />
+            </SkeletonGroup>
           ) : !open.length ? (
             <EmptyState icon={Vote} title={copy.emptyTitle} text={copy.emptyText} action={<Button to="/#free-ai-course" variant="outline" icon={GraduationCap}>Free AI course</Button>} />
           ) : (
