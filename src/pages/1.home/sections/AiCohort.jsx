@@ -1,86 +1,89 @@
-/* Free AI Learning spotlight: high contrast navy card, cohort date, six benefits and registration in a modal. */
-import { BadgeCheck, BookOpen, CalendarDays, CircleCheck, MessageCircleQuestion, ShieldCheck, Smartphone, Zap } from "lucide-react";
+/* Free AI Learning spotlight: light editorial layout on warm stone. Plain course facts,
+   a numbered benefit list with hairlines, and a calendar card resting on the photo.
+   Registration opens in a modal. */
+import { ArrowRight, Check, MessageCircleQuestion } from "lucide-react";
 import { useState } from "react";
 
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 import CourseRegistrationForm from "@/components/site/CourseRegistrationForm";
-import HexPattern from "@/components/site/HexPattern";
 import PhotoFrame from "@/components/site/PhotoFrame";
 import Button from "@/components/ui/Button";
 import Modal from "@/components/ui/Modal";
 import { usePageCopy } from "@/store/tanstackStore/queries/site";
 
-const POINT_ICONS = [Smartphone, BookOpen, MessageCircleQuestion, ShieldCheck, Zap, BadgeCheck];
-
 export default function AiCohort() {
   const { freeAi } = usePageCopy("home");
   const [open, setOpen] = useState(false);
+  const start = new Date(`${freeAi.startsOn}T09:00:00`);
+  const month = start.toLocaleDateString("en-GB", { month: "short" });
+  const day = start.getDate();
+  const weekday = start.toLocaleDateString("en-GB", { weekday: "long" });
+  const year = start.getFullYear();
 
   return (
-    <section id="free-ai-course" aria-labelledby="free-ai-title" className="scroll-mt-20 py-6 sm:py-10 lg:py-14">
-      <div className="container-gd">
-        <Reveal className="relative isolate overflow-hidden rounded-[2rem] bg-gd-navy-900 text-white">
-          <HexPattern className="absolute -top-8 right-0 -z-10 h-72 w-full text-gd-yellow-500/[0.09] [mask-image:linear-gradient(to_bottom,black,transparent)]" />
-          <div className="grid grid-cols-1 gap-10 p-6 sm:p-10 lg:grid-cols-12 lg:gap-12 lg:p-14">
-            <div className="lg:col-span-7">
-              <p className="eyebrow text-gd-yellow-400">{freeAi.eyebrow}</p>
-              <h2 id="free-ai-title" className="mt-3 max-w-[18ch] text-h2 text-white">
-                {freeAi.title}
-              </h2>
-              <p className="mt-4 text-body-lg font-semibold text-gd-navy-100">{freeAi.class}</p>
+    <section id="free-ai-course" aria-labelledby="free-ai-title" className="scroll-mt-20 border-y border-border bg-gd-stone-100 py-16 sm:py-20 lg:py-28 dark:bg-gd-navy-900/40">
+      <div className="container-gd grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
+        <div className="lg:col-span-7">
+          <Reveal>
+            <p className="eyebrow text-link">{freeAi.eyebrow}</p>
+            <h2 id="free-ai-title" className="mt-3 max-w-[18ch] text-h2">
+              {freeAi.title}
+            </h2>
+            <p className="mt-4 text-body-lg text-muted">
+              <span className="font-semibold text-foreground">{freeAi.class}</span>, starting {weekday}, {day} {start.toLocaleDateString("en-GB", { month: "long" })} {year}.
+            </p>
+            <ul className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-small font-semibold text-foreground">
+              {freeAi.facts.map((f) => (
+                <li key={f} className="flex items-center gap-2">
+                  <Check aria-hidden="true" size={16} strokeWidth={2} className="text-success" />
+                  {f}
+                </li>
+              ))}
+            </ul>
+          </Reveal>
 
-              <div className="mt-6 flex flex-wrap gap-2">
-                <p className="inline-flex min-h-11 items-center gap-2 rounded-full bg-gd-yellow-500 px-4 text-small font-bold text-gd-navy-900">
-                  <CalendarDays aria-hidden="true" size={18} strokeWidth={1.75} />
-                  <time dateTime={freeAi.startsOn}>{freeAi.startLabel}</time>
-                </p>
-                {freeAi.facts.map((f) => (
-                  <p key={f} className="inline-flex min-h-11 items-center gap-2 rounded-full bg-white/10 px-4 text-small font-semibold text-white ring-1 ring-inset ring-white/15">
-                    <CircleCheck aria-hidden="true" size={16} strokeWidth={1.75} className="text-gd-yellow-400" />
-                    {f}
-                  </p>
-                ))}
-              </div>
+          <Stagger as="ol" className="mt-10 grid grid-cols-1 gap-x-10 sm:grid-cols-2">
+            {freeAi.points.map((point, i) => (
+              <StaggerItem as="li" key={point} className="flex items-baseline gap-4 border-t border-border-strong py-4">
+                <span className="font-mono text-small font-semibold text-link tabular-nums">{String(i + 1).padStart(2, "0")}</span>
+                <span className="text-body-lg font-semibold text-foreground">{point}</span>
+              </StaggerItem>
+            ))}
+          </Stagger>
 
-              <Stagger as="ul" className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
-                {freeAi.points.map((point, i) => {
-                  const Icon = POINT_ICONS[i % POINT_ICONS.length];
-                  return (
-                    <StaggerItem as="li" key={point} className="flex items-center gap-3 rounded-2xl bg-white/[0.06] p-3.5 ring-1 ring-inset ring-white/10">
-                      <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-gd-yellow-500 text-gd-navy-900">
-                        <Icon aria-hidden="true" size={19} strokeWidth={1.75} />
-                      </span>
-                      <span className="font-semibold">{point}</span>
-                    </StaggerItem>
-                  );
-                })}
-              </Stagger>
+          <Reveal className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <Button size="lg" iconRight={ArrowRight} onClick={() => setOpen(true)} aria-haspopup="dialog">
+              {freeAi.cta}
+            </Button>
+            <Button to="/contact" size="lg" variant="ghost" icon={MessageCircleQuestion}>
+              {freeAi.secondaryCta}
+            </Button>
+          </Reveal>
+        </div>
 
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <Button size="lg" onClick={() => setOpen(true)} aria-haspopup="dialog">
-                  {freeAi.cta}
-                </Button>
-                <Button to="/contact" size="lg" variant="onDark" icon={MessageCircleQuestion}>
-                  {freeAi.secondaryCta}
-                </Button>
-              </div>
+        <Reveal delay={0.1} y={24} className="relative lg:col-span-5">
+          <PhotoFrame
+            src="/images/home-ai-course.webp"
+            alt="A young woman learning on her smartphone at home in the evening"
+            caption="A young woman learning AI on her smartphone at home"
+            ratio="4 / 5"
+            className="ml-auto max-w-md rounded-[1.75rem] lg:max-w-none"
+          />
+          <div className="absolute -bottom-6 left-0 flex items-center gap-4 rounded-2xl bg-surface p-3 pr-6 shadow-lift ring-1 ring-border sm:-left-6 lg:-left-10">
+            <div className="flex w-16 flex-col overflow-hidden rounded-xl text-center ring-1 ring-border">
+              <span className="bg-primary py-1 text-label font-bold tracking-[0.12em] text-gd-navy-900 uppercase">{month}</span>
+              <span className="py-1.5 font-display text-[1.75rem] leading-none font-bold text-foreground">{day}</span>
             </div>
-            <div className="lg:col-span-5">
-              <PhotoFrame
-                src="/images/home-ai-course.webp"
-                alt="A young woman learning on her smartphone at home in the evening"
-                caption="A young woman learning AI on her smartphone at home"
-                ratio="4 / 5"
-                tone="dark"
-                className="mx-auto max-w-md lg:max-w-none"
-              />
+            <div>
+              <p className="text-small font-semibold text-foreground">Cohort starts {weekday}</p>
+              <p className="text-small text-muted">Four weeks, free</p>
             </div>
           </div>
         </Reveal>
       </div>
 
       <Modal open={open} onClose={() => setOpen(false)} title="Register for the free AI course" description={`${freeAi.class}. ${freeAi.startLabel}.`}>
-        <CourseRegistrationForm startLabel="Monday, 11 January 2027" onDone={() => setOpen(false)} />
+        <CourseRegistrationForm startLabel={`${weekday}, ${day} ${start.toLocaleDateString("en-GB", { month: "long" })} ${year}`} onDone={() => setOpen(false)} />
       </Modal>
     </section>
   );
