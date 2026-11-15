@@ -1,0 +1,9 @@
+[
+  { "id": "blogs", "label": "Blogs" },
+  { "id": "partners", "label": "Partners" },
+  { "id": "press", "label": "Press" },
+  { "id": "voting", "label": "Voting" },
+  { "id": "tickets", "label": "Tickets" },
+  { "id": "messages", "label": "Messages" },
+  { "id": "settings", "label": "Settings" }
+]
