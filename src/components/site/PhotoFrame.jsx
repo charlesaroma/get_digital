@@ -6,7 +6,7 @@ import { useState } from "react";
 import { cn } from "@/utils/cn";
 import HexPattern from "./HexPattern";
 
-export default function PhotoFrame({ src, alt = "", caption, ratio = "4 / 3", position = "center", tone = "light", priority = false, className }) {
+export default function PhotoFrame({ src, alt = "", caption, ratio = "4 / 3", position = "center", tone = "light", priority = false, chamfer = false, className }) {
   const [failed, setFailed] = useState(false);
   const dark = tone === "dark";
   const showPhoto = src && !failed;
@@ -16,6 +16,7 @@ export default function PhotoFrame({ src, alt = "", caption, ratio = "4 / 3", po
       className={cn(
         "relative isolate overflow-hidden rounded-2xl ring-1 ring-inset",
         dark ? "bg-gd-navy-800 ring-white/10" : "bg-gd-stone-100 ring-border dark:bg-gd-navy-800",
+        chamfer && "gd-chamfer rounded-none ring-0",
         className,
       )}
       style={{ aspectRatio: ratio }}
