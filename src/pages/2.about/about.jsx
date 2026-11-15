@@ -26,6 +26,7 @@ export default function AboutPage() {
               alt="A GetDigital community workshop at Amara Hub in Lira"
               caption="A GetDigital community workshop at Amara Hub in Lira"
               ratio="21 / 9"
+              position="72% center"
               priority
               className="rounded-[1.75rem] [aspect-ratio:4/3] sm:[aspect-ratio:21/9]"
             />
