@@ -1,0 +1,7 @@
+# GetDigital256 (gd256.org)
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+Sitemap: https://gd256.org/sitemap.xml
