@@ -1,46 +1,40 @@
-/* Hero: left aligned message and actions, the AI Lab preview on the right (below on phones). */
-import { ArrowRight, BookOpen, Check, GraduationCap, MapPin } from "lucide-react";
+/* Hero: left aligned message and actions, a chamfered workshop photo on the right (below on phones). */
+import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 
 import { EASE } from "@/components/motion/ease";
 import { Reveal } from "@/components/motion/Reveal";
 import HexPattern from "@/components/site/HexPattern";
+import NodeMark, { HexDot } from "@/components/site/NodeMark";
+import PhotoFrame from "@/components/site/PhotoFrame";
 import Button from "@/components/ui/Button";
 import { usePageCopy } from "@/store/tanstackStore/queries/site";
-import AiLabWidget from "./AiLabWidget";
 
 export default function Hero() {
   const { hero } = usePageCopy("home");
   const [lead, last] = [hero.title.split(" ").slice(0, -1).join(" "), hero.title.split(" ").slice(-1)[0]];
 
   return (
-    <section aria-labelledby="hero-title" className="relative overflow-hidden">
-      <HexPattern className="absolute top-0 right-0 hidden h-full w-[55%] text-gd-navy-900/[0.045] lg:block [mask-image:radial-gradient(70%_70%_at_70%_40%,black,transparent)] dark:text-white/[0.05]" />
-      <div className="container-gd relative grid grid-cols-1 items-center gap-12 pt-10 pb-16 sm:pt-14 sm:pb-20 lg:grid-cols-12 lg:gap-8 lg:pt-16 lg:pb-24 xl:gap-12">
+    <section aria-labelledby="hero-title" className="relative flex min-h-[calc(100dvh-var(--header-h))] items-center overflow-hidden">
+      <HexPattern className="absolute top-0 right-0 h-full w-full text-gd-navy-900/[0.08] lg:w-[60%] [mask-image:radial-gradient(70%_70%_at_75%_40%,black,transparent)] dark:text-white/[0.08]" />
+      <div className="container-gd relative grid grid-cols-1 items-center gap-12 py-12 sm:py-16 lg:grid-cols-12 lg:gap-8 xl:gap-12">
         <div className="lg:col-span-6">
-          <Reveal>
-            <p className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3.5 py-2 text-small font-semibold text-foreground shadow-card">
-              <MapPin aria-hidden="true" size={16} strokeWidth={1.75} className="text-gd-yellow-700 dark:text-gd-yellow-400" />
-              {hero.badge}
-            </p>
+          <Reveal variant="fade">
+            <NodeMark label={hero.badge} />
           </Reveal>
           <Reveal delay={0.06}>
             <h1 id="hero-title" className="mt-6 max-w-[13ch] text-h1">
               {lead}{" "}
               <span className="relative inline-block whitespace-nowrap">
                 <span className="relative z-10">{last}</span>
-                <svg aria-hidden="true" viewBox="0 0 220 18" preserveAspectRatio="none" className="absolute -bottom-1 left-0 z-0 h-[0.32em] w-full">
-                  <motion.path
-                    d="M3 12 C 50 4, 120 3, 217 9"
-                    fill="none"
-                    stroke="var(--color-gd-yellow-500)"
-                    strokeWidth="9"
-                    strokeLinecap="round"
-                    initial={{ pathLength: 0 }}
-                    animate={{ pathLength: 1 }}
-                    transition={{ duration: 0.9, ease: EASE, delay: 0.5 }}
-                  />
-                </svg>
+                {/* Highlight bar cut on the hex angle; wipes in from the left (transform only). */}
+                <motion.span
+                  aria-hidden="true"
+                  className="absolute inset-x-[-0.08em] bottom-[0.06em] z-0 h-[0.38em] origin-left bg-gd-yellow-500 [clip-path:polygon(0_0,100%_0,calc(100%-0.3em)_100%,0.3em_100%)]"
+                  initial={{ scaleX: 0 }}
+                  animate={{ scaleX: 1 }}
+                  transition={{ duration: 0.6, ease: EASE, delay: 0.45 }}
+                />
               </span>
             </h1>
           </Reveal>
@@ -48,26 +42,36 @@ export default function Hero() {
             <p className="mt-6 max-w-[54ch] text-body-lg text-muted">{hero.text}</p>
           </Reveal>
           <Reveal delay={0.18} className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <Button to={hero.primary.to} size="lg" icon={BookOpen} iconRight={ArrowRight}>
+            <Button to={hero.primary.to} size="lg" iconRight={ArrowRight}>
               {hero.primary.label}
             </Button>
-            <Button to={hero.secondary.to} size="lg" variant="outline" icon={GraduationCap}>
+            <Button to={hero.secondary.to} size="lg" variant="outline">
               {hero.secondary.label}
             </Button>
           </Reveal>
-          <Reveal delay={0.24}>
+          <Reveal variant="fade" delay={0.24}>
             <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-small font-semibold text-muted">
               {hero.proof.map((p) => (
-                <li key={p} className="flex items-center gap-2">
-                  <Check aria-hidden="true" size={16} strokeWidth={2} className="text-success" />
+                <li key={p} className="flex items-center gap-2.5">
+                  <HexDot />
                   {p}
                 </li>
               ))}
             </ul>
           </Reveal>
         </div>
-        <Reveal delay={0.15} y={28} className="lg:col-span-6 xl:col-span-5 xl:col-start-8">
-          <AiLabWidget />
+        <Reveal variant="media" delay={0.15} className="relative lg:col-span-6 xl:col-span-5 xl:col-start-8">
+          {/* Yellow chamfered slab offset behind the photo gives depth without a shadow. */}
+          <div aria-hidden="true" className="gd-chamfer absolute inset-0 translate-x-3 translate-y-3 bg-gd-yellow-500 sm:translate-x-5 sm:translate-y-5" />
+          <PhotoFrame
+            src="/images/about-community.webp"
+            alt="A GetDigital community workshop at Amara Hub in Lira"
+            caption="A GetDigital community workshop at Amara Hub in Lira"
+            ratio="5 / 4"
+            chamfer
+            priority
+            className="relative"
+          />
         </Reveal>
       </div>
     </section>
