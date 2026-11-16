@@ -22,6 +22,7 @@ export default function FeaturedGuides() {
         <Reveal>
           <SectionHeading
             id="guides-title"
+            number="04"
             eyebrow={guides.eyebrow}
             title={guides.title}
             text={guides.text}
