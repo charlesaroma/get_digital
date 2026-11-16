@@ -7,6 +7,14 @@ import SocialIcon from "@/components/site/SocialIcon";
 import Skeleton from "@/components/ui/Skeleton";
 import { useSettings } from "@/store/tanstackStore/queries/site";
 
+const LEGAL = [
+  ["/privacy", "Privacy"],
+  ["/terms", "Terms of Use"],
+  ["/voting-rules", "Voting Rules"],
+  ["/ticket-terms", "Ticket Terms"],
+  ["/cookies", "Cookies"],
+];
+
 const linkClass = "inline-flex min-h-11 items-center text-muted transition-colors hover:text-foreground";
 
 export default function SiteFooter({ items, cta }) {
@@ -92,11 +100,21 @@ export default function SiteFooter({ items, cta }) {
         </div>
       </div>
       <div className="border-t border-border">
-        <div className="container-gd flex flex-col gap-2 py-6 text-small text-muted sm:flex-row sm:items-center sm:justify-between">
+        <div className="container-gd flex flex-col gap-2 py-4 text-small text-muted lg:flex-row lg:items-center lg:justify-between">
           <p>
             © {year} {settings?.legalName ?? "GetDigital LTD"}. All rights reserved.
           </p>
-          <p>Lira, Uganda</p>
+          <nav aria-label="Legal">
+            <ul className="flex flex-wrap gap-x-5 gap-y-1">
+              {LEGAL.map(([to, label]) => (
+                <li key={to}>
+                  <Link to={to} className="inline-flex min-h-11 items-center transition-colors hover:text-foreground">
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </div>
     </footer>
