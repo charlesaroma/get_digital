@@ -7,7 +7,7 @@ import { Link, useParams } from "react-router-dom";
 import { Reveal } from "@/components/motion/Reveal";
 import ShareBar from "@/components/site/ShareBar";
 import Countdown from "@/components/vote/Countdown";
-import NomineeRow from "@/components/vote/NomineeRow";
+import Leaderboard from "@/components/vote/Leaderboard";
 import VoteDialog from "@/components/vote/VoteDialog";
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
@@ -153,21 +153,14 @@ export default function CampaignPage() {
                 {showCounts && <p className="font-mono text-small tabular-nums text-muted">{formatCount(catTotal)} votes</p>}
               </div>
               {list.length ? (
-                <ol className="mt-6 flex flex-col gap-3">
-                  {list.map((n, i) => (
-                    <NomineeRow
-                      key={n.id}
-                      nominee={n}
-                      rank={i + 1}
-                      total={catTotal}
-                      href={`/vote/${poll.slug}/${n.slug}`}
-                      showCounts={showCounts}
-                      canVote={phase === "open"}
-                      winner={phase === "closed" && poll.resultsPublished && n.winner}
-                      onVote={() => setDialog({ mode: "vote", nominee: n })}
-                    />
-                  ))}
-                </ol>
+                <Leaderboard
+                  nominees={list}
+                  showCounts={showCounts}
+                  canVote={phase === "open"}
+                  hrefFor={(n) => `/vote/${poll.slug}/${n.slug}`}
+                  isWinner={(n) => phase === "closed" && poll.resultsPublished && n.winner}
+                  onVote={(n) => setDialog({ mode: "vote", nominee: n })}
+                />
               ) : (
                 <p className="mt-6 rounded-2xl border border-dashed border-border-strong p-6 text-muted">Nominees are announced when voting opens.</p>
               )}
