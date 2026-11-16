@@ -195,13 +195,14 @@
   "press": {
     "title": "Press",
     "text": "News and press releases from GetDigital.",
-    "empty": "No press releases yet. Check back soon."
+    "empty": "No press releases yet. Check back soon.",
+    "mediaTitle": "Media enquiries",
+    "mediaText": "For interviews, photos and partnership news, email us. We reply within two working days."
   },
   "blogs": {
     "title": "Blogs",
     "text": "Guides on devices, software, AI and staying safe online.",
-    "empty": "No guides in this category yet.",
-    "movingNote": "We are moving this guide to our new website. Here is the summary while the full article is published."
+    "empty": "No guides in this category yet."
   },
   "contact": {
     "title": "Send your message",
@@ -209,13 +210,13 @@
   },
   "vote": {
     "title": "Vote",
-    "text": "Cast your vote for your favourite nominees.",
-    "emptyTitle": "Voting is not open yet",
-    "emptyText": "When a poll opens, the nominees will appear here. Follow us on X or YouTube for the announcement."
+    "text": "Back the people, hubs and small businesses making technology work for Ugandans. Votes are free and counted live.",
+    "emptyTitle": "No campaigns are open right now",
+    "emptyText": "When a campaign opens, the nominees will appear here. Follow us on X or YouTube for the announcement."
   },
   "tickets": {
-    "title": "Tickets",
-    "text": "Get tickets to GetDigital events.",
+    "title": "Events and tickets",
+    "text": "Workshops, clinics and celebrations from GetDigital. Get a free or paid ticket in a few taps.",
     "emptyTitle": "No events on sale right now",
     "emptyText": "Upcoming GetDigital events will appear here with tickets. Meanwhile, join the free AI course."
   },
