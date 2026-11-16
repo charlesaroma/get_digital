@@ -1,3 +1,25 @@
 [
-  { "id": "s1", "name": "Dummy Admin", "email": "admin@example.com", "role": "owner", "password": "dummy-only", "active": true }
+  {
+    "id": "s1",
+    "name": "GetDigital Admin",
+    "email": "admin@gd256.org",
+    "role": "owner",
+    "password": "GetDigital@2026",
+    "active": true,
+    "note": "Dummy mode only. Real passwords live hashed on the server, never in this file."
+  },
+  {
+    "id": "s2",
+    "name": "Content Editor",
+    "email": "editor@gd256.org",
+    "role": "editor",
+    "password": "Editor@2026",
+    "permissions": [
+      "blogs",
+      "press",
+      "partners"
+    ],
+    "active": true,
+    "note": "Dummy mode only."
+  }
 ]

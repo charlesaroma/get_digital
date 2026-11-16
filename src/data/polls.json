@@ -1,3 +1,216 @@
 [
-  { "id": "poll1", "slug": "digital-champion-2026", "title": "Digital Champion of the Year 2026", "description": "Placeholder poll. Replace with the client's real categories.", "opensAt": "2026-12-01T00:00:00Z", "closesAt": "2026-12-31T23:59:59Z", "status": "draft", "votesPerPerson": 1 }
+  {
+    "id": "awards-2026",
+    "slug": "getdigital-awards-2026",
+    "title": "GetDigital Awards 2026",
+    "summary": "Celebrating the people and small businesses helping Ugandans use technology with confidence.",
+    "description": "The GetDigital Awards recognise the teachers, young innovators, community trainers and small businesses who make technology useful for the people around them. Nominations came from the public in October. Vote for the nominee you believe has done the most this year. Winners are announced at the Gala Night on 19 December 2026.",
+    "image": "/images/vote/getdigital-awards-2026.webp",
+    "imageAlt": "Nominees and guests at a GetDigital community event in Lira",
+    "status": "open",
+    "featured": true,
+    "opensAt": "2026-11-10T06:00:00Z",
+    "closesAt": "2026-12-12T18:00:00Z",
+    "resultsAt": "2026-12-19T18:00:00Z",
+    "resultsPublished": false,
+    "showLiveCounts": true,
+    "freeVotes": {
+      "perCategory": 1,
+      "period": "day"
+    },
+    "eventSlug": "getdigital-awards-gala-2026",
+    "categories": [
+      {
+        "id": "digital-champion",
+        "name": "Digital Champion of the Year",
+        "description": "The person who helped the most people use technology this year."
+      },
+      {
+        "id": "youth-innovator",
+        "name": "Youth Innovator",
+        "description": "Under 30 and building something useful with technology."
+      },
+      {
+        "id": "digital-teacher",
+        "name": "Digital Teacher of the Year",
+        "description": "A teacher using technology and AI well, and teaching learners to check it."
+      },
+      {
+        "id": "woman-in-tech",
+        "name": "Woman in Tech Leader",
+        "description": "A woman opening doors for others in technology."
+      },
+      {
+        "id": "tech-savvy-business",
+        "name": "Tech Savvy Small Business",
+        "description": "A small business that grew by using digital tools well."
+      }
+    ],
+    "boost": {
+      "enabled": true,
+      "pricePerVote": 500,
+      "currency": "UGX",
+      "min": 1,
+      "max": 10000,
+      "quick": [
+        10,
+        50,
+        100,
+        500
+      ]
+    },
+    "vip": {
+      "enabled": true,
+      "currency": "UGX",
+      "packages": [
+        {
+          "id": "vip-supporter",
+          "name": "VIP Supporter",
+          "price": 50000,
+          "instantVotes": 100,
+          "dailyVotes": 10,
+          "perks": [
+            "100 votes added straight away",
+            "10 extra votes every day until voting closes",
+            "A Standard ticket to the Gala Night"
+          ],
+          "ticketTypeId": "tt-gala-standard"
+        },
+        {
+          "id": "vip-patron",
+          "name": "VIP Patron",
+          "price": 150000,
+          "instantVotes": 400,
+          "dailyVotes": 25,
+          "label": "Best value",
+          "perks": [
+            "400 votes added straight away",
+            "25 extra votes every day until voting closes",
+            "A VIP ticket to the Gala Night",
+            "Your name on the supporters wall"
+          ],
+          "ticketTypeId": "tt-gala-vip"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hub-2026",
+    "slug": "best-community-digital-hub-2026",
+    "title": "Best Community Digital Hub 2026",
+    "summary": "Which community space did the most to get people online this year?",
+    "description": "Community hubs give people a place to charge a phone, use a computer, learn a skill and get online. Vote for the hub that made the biggest difference in your area. The winning hub receives two laptops and a year of data from our partners.",
+    "image": "/images/vote/best-community-digital-hub-2026.webp",
+    "imageAlt": "Young people using computers at a community digital hub",
+    "status": "open",
+    "featured": false,
+    "opensAt": "2026-11-01T06:00:00Z",
+    "closesAt": "2026-11-30T18:00:00Z",
+    "resultsAt": "2026-12-05T12:00:00Z",
+    "resultsPublished": false,
+    "showLiveCounts": true,
+    "freeVotes": {
+      "perCategory": 1,
+      "period": "day"
+    },
+    "categories": [
+      {
+        "id": "community-hub",
+        "name": "Community Digital Hub",
+        "description": "A public space where people learn and get online."
+      }
+    ],
+    "boost": {
+      "enabled": true,
+      "pricePerVote": 300,
+      "currency": "UGX",
+      "min": 1,
+      "max": 10000,
+      "quick": [
+        10,
+        50,
+        100,
+        300
+      ]
+    },
+    "vip": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "student-ai-2027",
+    "slug": "student-ai-project-showcase-2027",
+    "title": "Student AI Project Showcase 2027",
+    "summary": "Secondary and university students show what they built with AI. The public picks the People's Choice winner.",
+    "description": "Students from across Uganda submit projects that use AI to solve a local problem. Judges pick the category winners; the public vote decides the People's Choice award. Project submissions close on 10 January 2027.",
+    "image": "/images/vote/student-ai-project-showcase-2027.webp",
+    "imageAlt": "Students presenting a project on a laptop",
+    "status": "scheduled",
+    "featured": false,
+    "opensAt": "2027-01-18T06:00:00Z",
+    "closesAt": "2027-02-15T18:00:00Z",
+    "resultsAt": "2027-02-20T12:00:00Z",
+    "resultsPublished": false,
+    "showLiveCounts": true,
+    "freeVotes": {
+      "perCategory": 1,
+      "period": "day"
+    },
+    "categories": [
+      {
+        "id": "secondary",
+        "name": "Best AI Project: Secondary School",
+        "description": "Projects by students in S1 to S6."
+      },
+      {
+        "id": "university",
+        "name": "Best AI Project: University and Tertiary",
+        "description": "Projects by university and tertiary students."
+      }
+    ],
+    "boost": {
+      "enabled": false
+    },
+    "vip": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "lira-skills-2025",
+    "slug": "lira-digital-skills-challenge-2025",
+    "title": "Lira Digital Skills Challenge 2025",
+    "summary": "Our first public vote, celebrating learners from the 2025 digital skills classes in Lira.",
+    "description": "Learners from the 2025 GetDigital classes in Lira showed what they learned. The public voted for the most improved learner and the best small business website.",
+    "image": "/images/vote/lira-digital-skills-challenge-2025.webp",
+    "imageAlt": "Learners celebrating at the end of a digital skills class in Lira",
+    "status": "closed",
+    "featured": false,
+    "opensAt": "2025-11-03T06:00:00Z",
+    "closesAt": "2025-11-28T18:00:00Z",
+    "resultsAt": "2025-12-02T12:00:00Z",
+    "resultsPublished": true,
+    "showLiveCounts": true,
+    "freeVotes": {
+      "perCategory": 1,
+      "period": "campaign"
+    },
+    "categories": [
+      {
+        "id": "most-improved",
+        "name": "Most Improved Learner",
+        "description": "The learner who grew the most during the classes."
+      },
+      {
+        "id": "best-website",
+        "name": "Best Small Business Website",
+        "description": "A small business site built during the classes."
+      }
+    ],
+    "boost": {
+      "enabled": false
+    },
+    "vip": {
+      "enabled": false
+    }
+  }
 ]

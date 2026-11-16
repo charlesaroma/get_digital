@@ -1,1 +1,79 @@
-[]
+[
+  {
+    "id": "ord-1001",
+    "reference": "GD-7K2M9Q",
+    "eventId": "ev-gala-2026",
+    "items": [
+      {
+        "ticketTypeId": "tt-gala-standard",
+        "quantity": 2
+      }
+    ],
+    "name": "Sample Buyer A",
+    "email": "buyer.a@example.com",
+    "phone": "0772000001",
+    "total": 60000,
+    "currency": "UGX",
+    "paymentMethod": "mtn",
+    "status": "paid",
+    "createdAt": "2026-11-12T09:14:00Z",
+    "tickets": [
+      {
+        "code": "GD-7K2M9Q-1",
+        "ticketTypeId": "tt-gala-standard",
+        "checkedInAt": null
+      },
+      {
+        "code": "GD-7K2M9Q-2",
+        "ticketTypeId": "tt-gala-standard",
+        "checkedInAt": null
+      }
+    ]
+  },
+  {
+    "id": "ord-1002",
+    "reference": "GD-4P8X1D",
+    "eventId": "ev-ai-launch",
+    "items": [
+      {
+        "ticketTypeId": "tt-launch-free",
+        "quantity": 1
+      }
+    ],
+    "name": "Sample Buyer B",
+    "email": "buyer.b@example.com",
+    "phone": "0701000002",
+    "total": 0,
+    "currency": "UGX",
+    "paymentMethod": "free",
+    "status": "confirmed",
+    "createdAt": "2026-11-14T16:40:00Z",
+    "tickets": [
+      {
+        "code": "GD-4P8X1D-1",
+        "ticketTypeId": "tt-launch-free",
+        "checkedInAt": null
+      }
+    ]
+  },
+  {
+    "id": "ord-1003",
+    "reference": "GD-9R3T6W",
+    "eventId": "ev-gala-2026",
+    "items": [
+      {
+        "ticketTypeId": "tt-gala-vip",
+        "quantity": 1
+      }
+    ],
+    "name": "Sample Buyer C",
+    "email": "buyer.c@example.com",
+    "phone": "0756000003",
+    "total": 80000,
+    "currency": "UGX",
+    "paymentMethod": "airtel",
+    "status": "pending",
+    "createdAt": "2026-11-15T11:02:00Z",
+    "tickets": []
+  }
+]

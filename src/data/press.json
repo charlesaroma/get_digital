@@ -1,4 +1,219 @@
 [
-  { "id": "p1", "slug": "cyberiad-labs-first-uganda-partner", "title": "Cyberiad Labs and GetDigital partner to teach AI to young job seekers in Uganda", "location": "Kampala, Uganda", "publishedAt": "2026-11-10", "readMinutes": 7, "summary": "GetDigital is Cyberiad Labs' first Uganda partner, with 250 free places in the four-week Introduction to AI and LLMs course.", "url": null },
-  { "id": "p2", "slug": "free-ai-course-one-million-ugandans", "title": "GetDigital Ltd and Cyberiad Labs Launch Free AI Course Targeting One Million Ugandans by 2030", "location": "Kampala, Uganda", "publishedAt": "2026-11-02", "readMinutes": 3, "summary": "A free online introductory AI course open to anyone in Uganda.", "url": null }
+  {
+    "id": "p1",
+    "slug": "cyberiad-labs-first-uganda-partner",
+    "kind": "Press release",
+    "title": "Cyberiad Labs and GetDigital partner to teach AI to young job seekers in Uganda",
+    "location": "Kampala, Uganda",
+    "publishedAt": "2026-11-10",
+    "readMinutes": 7,
+    "summary": "GetDigital is Cyberiad Labs’ first partner in Uganda. Its learners, most of them recent graduates looking for work, started Cyberiad Labs’ AI course on 2 November, and GetDigital will get free places in future classes too.",
+    "image": null,
+    "imageAlt": null,
+    "url": null,
+    "contacts": [
+      {
+        "name": "Ronald Desmond Otim",
+        "role": "Founder, GetDigital",
+        "email": "getdigital256@gmail.com"
+      },
+      {
+        "name": "Steven Opio",
+        "role": "Operations lead, GetDigital",
+        "email": "getdigital256@gmail.com"
+      },
+      {
+        "name": "Julien Barbier",
+        "role": "Co-founder, Cyberiad Labs",
+        "email": "julien@cyberiadlabs.com"
+      }
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": "RALEIGH, N.C., and KAMPALA, Uganda, 10 November 2026. Cyberiad Labs and GetDigital today announced a partnership that gives GetDigital’s learners free places in Cyberiad Labs’ classes. It starts with 250 places in the class that opened on Monday 2 November 2026, with more in future classes. The course, Introduction to AI and LLMs, is online, part-time and four weeks long."
+      },
+      {
+        "type": "p",
+        "text": "GetDigital’s places come on top of the public ones, which are full for every class until the end of 2026. This is Cyberiad Labs’ fourteenth education partnership, and its first in Uganda."
+      },
+      {
+        "type": "p",
+        "text": "Ronald Desmond Otim founded GetDigital in Kampala in June 2025. He is a content assistant at Bulldog Digital Media, a UK company, and has worked as an SEO and AI research assistant at SmythOS and as a search marketing specialist at INK for All. He holds a bachelor’s degree in economics and a postgraduate diploma in digital marketing strategies, which he earned online."
+      },
+      {
+        "type": "p",
+        "text": "In 2024 and early 2025, he was one of the consultant trainers on the Online Gig Work Program, a pilot by the International Labour Organization (ILO), with StartHub Africa running the training, and trained learners in Kampala. The pilot trained young refugees and young Ugandans from host communities in Kampala and the Nakivale refugee settlement to find work online. The ILO reported in 2025 that 218 young people had completed the pilot’s 10-day training, and that 70 of its graduates had won 148 paid online gigs."
+      },
+      {
+        "type": "p",
+        "text": "GetDigital, a not-for-profit company, helps people in Uganda use digital technology, whatever their technical background, through training, guides and how-to videos. It works on online freelancing for young people, digital skills for small businesses, women’s groups and farmers, Uganda’s online government services, and digital inclusion for refugees and their host communities. Its places in Cyberiad Labs’ classes go to young people aged 18 to 35, most of them recent graduates looking for work."
+      },
+      {
+        "type": "p",
+        "text": "Young people in Uganda face a hard job market. Uganda’s 2024 census found that about half of people aged 18 to 30 (50.9%) were not in employment, education or training. Jobs that ask for AI skills already pay more. PwC’s 2026 Global AI Jobs Barometer, which analysed more than a billion job ads in 27 countries and territories, found an average wage premium of 62% for workers with AI skills, up from 57% a year earlier. For young people in Uganda who look for work online, as Desmond did, that market is the global one."
+      },
+      {
+        "type": "p",
+        "text": "“Steven Opio, GetDigital’s operations lead, learned on one of my programmes at ALX, and he is the one who introduced us,” said Julien Barbier, co-founder of Cyberiad Labs. “Desmond is the proof of what GetDigital teaches: he rebuilt his career online, one skill at a time. His learners will compete for jobs with people who already use AI every day. We want them to be the ones who use it best, because they know how it works, where it fails and how to check it.”"
+      },
+      {
+        "type": "p",
+        "text": "“During COVID-19, my business hit rock bottom, and the internet was the only place I could still work. I learned new skills online and found freelance jobs on Upwork, and those skills have since helped me earn a living from online work,” said Ronald Desmond Otim, founder of GetDigital. “I want every Ugandan to have that chance, and today that chance runs through AI. Apart from hands-on work such as surgery or construction, AI can help with most jobs. Learn AI and you become highly productive. Ignore it and you become irrelevant.”"
+      },
+      {
+        "type": "p",
+        "text": "Cyberiad Labs’ Introduction to AI and LLMs (large language models) is for everyone, whatever their field, and needs no coding. It teaches learners what AI is, how it works and where it fails. In the first week, they see that the system answering so confidently is a program predicting text, one small piece at a time, and that it can be wrong. Throughout the course, they practise checking its answers, asking for its sources and verifying them, and deciding for themselves when to rely on it."
+      },
+      {
+        "type": "p",
+        "text": "Cyberiad Labs’ first class opened on 14 September with 1,005 learners from 51 countries, 95% of them in Africa, and rated its sessions 4.8 out of 5 on average. “What I liked most was the simplicity in the language,” said Nafula, a learner from Uganda in that class."
+      },
+      {
+        "type": "p",
+        "text": "“A recent graduate’s first problem is proving skills that no employer has seen yet,” said Youssef Charif Hamidi, co-founder of Cyberiad Labs. “Learners who pass our four weekly quizzes earn a certificate they can add to their LinkedIn profile. One click shows an employer that it is real, who earned it and when. For someone applying for a first job, that is worth more than a line on a CV.”"
+      },
+      {
+        "type": "p",
+        "text": "GetDigital’s learners register through a link Cyberiad Labs sends them, and follow the course on their own phones or computers, paying for their own internet. The small AI model each learner installs on the first day helps here: once downloaded, it runs offline on their own device, so they can keep practising with AI without an internet connection. The course is in English, written in plain words for people whose first language is not English, and every chapter has a player that reads it out loud. Non-profits and foundations that don’t charge their learners can also ask for free places of their own at julien@cyberiadlabs.com."
+      },
+      {
+        "type": "h2",
+        "text": "About Cyberiad Labs"
+      },
+      {
+        "type": "p",
+        "text": "Cyberiad Labs teaches people to work with AI without handing it their thinking. Those skills help people keep a job or find one, and help organisations keep up as AI changes their work. It teaches learners directly, and works with schools, universities, companies, NGOs and governments."
+      },
+      {
+        "type": "p",
+        "text": "Julien Barbier co-founded Holberton School, a software engineering school with no teachers, no lectures and no upfront tuition. It grew from one campus in San Francisco to 32 worldwide before it was acquired. He then led product and growth at ALX across its software engineering and applied AI programmes, where the number of learners went from a few thousand to more than 1.6 million. Before Holberton, he was the first head of marketing, growth and community at Docker."
+      },
+      {
+        "type": "p",
+        "text": "Youssef Charif Hamidi is a full-stack engineer. He learned to code on Julien’s 12 month ALX software engineering programme. He finished it on an Android tablet, because cerebral palsy limits him to about two words a minute on a computer keyboard. Previously, he built MathVellum, a maths editor for people who cannot hold a pen."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Home: https://www.cyberiadlabs.com",
+          "Mission: https://www.cyberiadlabs.com/mission.html",
+          "Partners: https://www.cyberiadlabs.com/partners.html"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "About GetDigital"
+      },
+      {
+        "type": "p",
+        "text": "GetDigital is a technology education and information organisation based in Kampala, Uganda. We believe technology should be accessible, practical and easy to understand, regardless of a person’s technical background. However, keeping up with digital developments can be challenging, especially when guidance is too technical or difficult to follow. Through digital education and information sharing, we help people make better tech decisions, use technology responsibly and take advantage of the opportunities the digital world offers. https://gd256.org"
+      },
+      {
+        "type": "h2",
+        "text": "Sources"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Uganda Bureau of Statistics, “The National Population and Housing Census 2024: Final Report, Volume 1 (Main)”, December 2024.",
+          "Uganda Bureau of Statistics, “International Youth Day Celebrations 2025”, 2025.",
+          "PwC, “AI reshapes global labour market into two distinct paths, rewarding human skills: PwC 2026 Global AI Jobs Barometer”, 15 June 2026.",
+          "International Labour Organization, “Uganda’s pilot opens doors for youth and refugees to the digital economy”, 25 April 2025.",
+          "StartHub Africa, “Online Gig Work Program”."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p2",
+    "slug": "free-ai-course-one-million-ugandans",
+    "kind": "Press release",
+    "title": "GetDigital Ltd and Cyberiad Labs Launch Free AI Course Targeting One Million Ugandans by 2030",
+    "location": "Kampala, Uganda",
+    "publishedAt": "2026-11-02",
+    "readMinutes": 3,
+    "summary": "GetDigital Ltd and Cyberiad Labs are partnering on a free introductory AI course now open to anyone in Uganda. The target is one million Ugandans trained in foundational AI skills by 2030. No technical background required.",
+    "image": null,
+    "imageAlt": null,
+    "url": null,
+    "contacts": [
+      {
+        "name": "Ronald Desmond Otim",
+        "role": "Founder, GetDigital",
+        "email": "getdigital256@gmail.com"
+      },
+      {
+        "name": "Julien Barbier",
+        "role": "Co-founder, Cyberiad Labs",
+        "email": "julien@cyberiadlabs.com"
+      }
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": "Students will learn machine learning concepts, practical uses of AI in everyday life and business, and the ethical questions that come with adopting AI. It's built for people who've never touched a line of code, which is exactly the point."
+      },
+      {
+        "type": "h2",
+        "text": "How the Partnership Breaks Down"
+      },
+      {
+        "type": "p",
+        "text": "Cyberiad Labs, a global AI research and training company, provides the course content, learning platform, and technical expertise. GetDigital Ltd runs the ground operation: outreach, learner recruitment, and community engagement across Uganda's districts."
+      },
+      {
+        "type": "p",
+        "text": "Launch is online first. But there are already plans to extend access through community centres, universities, and mobile-friendly platforms to reach learners in rural areas, not just people in Kampala or the bigger towns."
+      },
+      {
+        "type": "h2",
+        "text": "Why One Million Isn't as Crazy as It Sounds"
+      },
+      {
+        "type": "p",
+        "text": "That number represents roughly two and a half per cent of Uganda's population. And the partners say a phased rollout makes it realistic: start in urban centres, build momentum, then push into underserved communities over the next four years."
+      },
+      {
+        "type": "p",
+        "text": "AI is already reshaping agriculture, healthcare, financial services and education around the world. Uganda has one of the youngest, fastest-growing populations on the continent."
+      },
+      {
+        "type": "p",
+        "text": "Sitting out this shift isn't really an option."
+      },
+      {
+        "type": "p",
+        "text": "This partnership is built on a specific bet: that Ugandans shouldn't just use AI tools built somewhere else. They should be building solutions of their own."
+      },
+      {
+        "type": "h2",
+        "text": "What the Founders Say"
+      },
+      {
+        "type": "p",
+        "text": "\"Every Ugandan deserves a seat at the table when it comes to artificial intelligence, not in five years, but now,\" said Mr. Otim Ronald Desmond, Founder of GetDigital. \"Through this partnership with Cyberiad Labs, we are guaranteeing that seat. Our goal of one million AI-literate Ugandans by 2030 is a commitment to ensuring our people are not left behind as the world transforms around us.\""
+      },
+      {
+        "type": "p",
+        "text": "\"Uganda has one of the youngest and most dynamic populations on the continent, and the appetite for learning here is real,\" said Julien Barbier, Co-founder of Cyberiad Labs. \"We built Cyberiad Labs to deliver world-class AI education at no cost, and GetDigital is the ideal partner to bring that mission to life in Uganda. Together, we can turn one million learners into one million builders.\""
+      },
+      {
+        "type": "h2",
+        "text": "About GetDigital"
+      },
+      {
+        "type": "p",
+        "text": "GetDigital Ltd is a Ugandan technology education organisation dedicated to advancing digital literacy and skills development across the country. Through training programmes, community partnerships, and advocacy, GetDigital Ltd helps individuals and organisations put technology to work for economic and social change."
+      },
+      {
+        "type": "h2",
+        "text": "About Cyberiad Labs"
+      },
+      {
+        "type": "p",
+        "text": "Cyberiad Labs is a global AI research and training company with expertise in machine learning, natural language processing, and applied AI. It develops accessible learning programmes that give individuals and enterprises the skills to work in an AI-driven economy, at no cost."
+      }
+    ]
+  }
 ]

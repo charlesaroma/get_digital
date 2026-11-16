@@ -1,3 +1,120 @@
 [
-  { "id": "t1", "eventId": "e1", "name": "General", "price": 0, "currency": "UGX", "capacity": 100, "sold": 0, "position": 1, "active": true }
+  {
+    "id": "tt-launch-free",
+    "eventId": "ev-ai-launch",
+    "name": "Free entry",
+    "description": "Holds your seat for the morning.",
+    "perks": [
+      "Course account setup",
+      "Wi-Fi during the session"
+    ],
+    "price": 0,
+    "currency": "UGX",
+    "capacity": 120,
+    "sold": 87,
+    "maxPerOrder": 2,
+    "position": 1,
+    "active": true
+  },
+  {
+    "id": "tt-gala-standard",
+    "eventId": "ev-gala-2026",
+    "name": "Standard",
+    "description": "One seat at the Gala Night.",
+    "perks": [
+      "Dinner and soft drinks",
+      "Seat in the main hall"
+    ],
+    "price": 30000,
+    "currency": "UGX",
+    "capacity": 150,
+    "sold": 64,
+    "maxPerOrder": 6,
+    "position": 1,
+    "active": true
+  },
+  {
+    "id": "tt-gala-vip",
+    "eventId": "ev-gala-2026",
+    "name": "VIP",
+    "description": "Front seating and a meet and greet with the nominees.",
+    "perks": [
+      "Front row seating",
+      "Meet the nominees",
+      "Dinner and soft drinks",
+      "Gift pack"
+    ],
+    "price": 80000,
+    "currency": "UGX",
+    "capacity": 40,
+    "sold": 38,
+    "maxPerOrder": 4,
+    "position": 2,
+    "active": true
+  },
+  {
+    "id": "tt-gala-table",
+    "eventId": "ev-gala-2026",
+    "name": "Table of 8",
+    "description": "A reserved table for your team or family.",
+    "perks": [
+      "Eight seats together",
+      "Your name on the table",
+      "Dinner and soft drinks"
+    ],
+    "price": 500000,
+    "currency": "UGX",
+    "capacity": 10,
+    "sold": 10,
+    "maxPerOrder": 1,
+    "position": 3,
+    "active": true
+  },
+  {
+    "id": "tt-sme-standard",
+    "eventId": "ev-sme-clinic",
+    "name": "Business owner",
+    "description": "Full morning with a trainer.",
+    "perks": [
+      "Small group of eight",
+      "Printed checklist"
+    ],
+    "price": 10000,
+    "currency": "UGX",
+    "capacity": 48,
+    "sold": 12,
+    "maxPerOrder": 3,
+    "position": 1,
+    "active": true
+  },
+  {
+    "id": "tt-sme-student",
+    "eventId": "ev-sme-clinic",
+    "name": "Student",
+    "description": "For students with a valid student ID.",
+    "perks": [
+      "Small group of eight"
+    ],
+    "price": 5000,
+    "currency": "UGX",
+    "capacity": 16,
+    "sold": 4,
+    "maxPerOrder": 1,
+    "position": 2,
+    "active": true
+  },
+  {
+    "id": "tt-safety-free",
+    "eventId": "ev-safety-2026",
+    "name": "Free entry",
+    "description": "",
+    "perks": [],
+    "price": 0,
+    "currency": "UGX",
+    "capacity": 80,
+    "sold": 71,
+    "maxPerOrder": 2,
+    "position": 1,
+    "active": false
+  }
 ]

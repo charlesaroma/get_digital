@@ -1,1 +1,122 @@
-[]
+[
+  {
+    "id": "v1",
+    "pollId": "awards-2026",
+    "categoryId": "digital-teacher",
+    "nomineeId": "awards-2026-ruth-namutebi",
+    "voterKey": "hash_37f0829571",
+    "channel": "phone",
+    "kind": "free",
+    "createdAt": "2026-11-13T09:53:00Z"
+  },
+  {
+    "id": "v2",
+    "pollId": "awards-2026",
+    "categoryId": "tech-savvy-business",
+    "nomineeId": "awards-2026-ober-fresh-juices",
+    "voterKey": "hash_da70e1dfce",
+    "channel": "phone",
+    "kind": "free",
+    "createdAt": "2026-11-13T06:39:00Z"
+  },
+  {
+    "id": "v3",
+    "pollId": "awards-2026",
+    "categoryId": "digital-champion",
+    "nomineeId": "awards-2026-patience-nabirye",
+    "voterKey": "hash_ba7b648aa9",
+    "channel": "email",
+    "kind": "free",
+    "createdAt": "2026-11-13T06:28:00Z"
+  },
+  {
+    "id": "v4",
+    "pollId": "awards-2026",
+    "categoryId": "tech-savvy-business",
+    "nomineeId": "awards-2026-mama-ruth-salon",
+    "voterKey": "hash_d68d9e0f0f",
+    "channel": "email",
+    "kind": "free",
+    "createdAt": "2026-11-14T17:23:00Z"
+  },
+  {
+    "id": "v5",
+    "pollId": "awards-2026",
+    "categoryId": "digital-teacher",
+    "nomineeId": "awards-2026-emmanuel-odongo",
+    "voterKey": "hash_fa7a01f0c3",
+    "channel": "email",
+    "kind": "free",
+    "createdAt": "2026-11-10T12:06:00Z"
+  },
+  {
+    "id": "v6",
+    "pollId": "awards-2026",
+    "categoryId": "digital-teacher",
+    "nomineeId": "awards-2026-joan-adongo",
+    "voterKey": "hash_3b63313bbe",
+    "channel": "phone",
+    "kind": "free",
+    "createdAt": "2026-11-15T16:14:00Z"
+  },
+  {
+    "id": "v7",
+    "pollId": "awards-2026",
+    "categoryId": "digital-champion",
+    "nomineeId": "awards-2026-grace-akello",
+    "voterKey": "hash_9f11e78d2e",
+    "channel": "phone",
+    "kind": "free",
+    "createdAt": "2026-11-11T07:18:00Z"
+  },
+  {
+    "id": "v8",
+    "pollId": "awards-2026",
+    "categoryId": "youth-innovator",
+    "nomineeId": "awards-2026-ivan-mugisha",
+    "voterKey": "hash_41f5220531",
+    "channel": "email",
+    "kind": "free",
+    "createdAt": "2026-11-11T16:18:00Z"
+  },
+  {
+    "id": "v9",
+    "pollId": "awards-2026",
+    "categoryId": "tech-savvy-business",
+    "nomineeId": "awards-2026-mama-ruth-salon",
+    "voterKey": "hash_6c38538503",
+    "channel": "phone",
+    "kind": "free",
+    "createdAt": "2026-11-15T09:41:00Z"
+  },
+  {
+    "id": "v10",
+    "pollId": "awards-2026",
+    "categoryId": "digital-champion",
+    "nomineeId": "awards-2026-moses-ocen",
+    "voterKey": "hash_70f29c9838",
+    "channel": "phone",
+    "kind": "boost",
+    "createdAt": "2026-11-12T12:44:00Z"
+  },
+  {
+    "id": "v11",
+    "pollId": "awards-2026",
+    "categoryId": "woman-in-tech",
+    "nomineeId": "awards-2026-doreen-kyomuhendo",
+    "voterKey": "hash_3bb9cae59f",
+    "channel": "email",
+    "kind": "free",
+    "createdAt": "2026-11-12T11:31:00Z"
+  },
+  {
+    "id": "v12",
+    "pollId": "awards-2026",
+    "categoryId": "digital-champion",
+    "nomineeId": "awards-2026-grace-akello",
+    "voterKey": "hash_30401e4435",
+    "channel": "email",
+    "kind": "boost",
+    "createdAt": "2026-11-10T06:06:00Z"
+  }
+]
