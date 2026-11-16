@@ -1,0 +1,638 @@
+{
+  "privacy": {
+    "slug": "privacy",
+    "title": "Privacy Policy",
+    "summary": "What personal data GetDigital256 collects, why we use it, who we share it with and the rights you have under Uganda's Data Protection and Privacy Act, 2019.",
+    "updatedAt": "2026-11-16",
+    "sections": [
+      {
+        "id": "who-we-are",
+        "heading": "Who we are",
+        "body": [
+          {
+            "type": "p",
+            "text": "GetDigital256 is run by GetDigital LTD, a not-for-profit company in Uganda (\"GetDigital\", \"we\", \"us\"). Our office is at Amara Hub Building, Plot 62, Lira to Gulu Road, Lira (P.O. Box 331582, Lira)."
+          },
+          {
+            "type": "p",
+            "text": "We decide how and why your personal data is used on gd256.org, so we are the data controller under the Data Protection and Privacy Act, 2019 and the Data Protection and Privacy Regulations, 2021. For any privacy question or request, email getdigital256@gmail.com."
+          }
+        ]
+      },
+      {
+        "id": "what-we-collect",
+        "heading": "What we collect",
+        "body": [
+          {
+            "type": "p",
+            "text": "We only collect what we need for the thing you ask us to do."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Contact form: your name, email, phone number (optional) and your message.",
+              "Free AI course registration: your name, phone number, email, town or district and the option that describes you (for example student or job seeker).",
+              "Voting: the phone number or email you use to receive a voting code, the nominee you vote for and the time of the vote. If you buy Boost votes or a VIP package, your name, email and the payment reference.",
+              "Tickets: your name, email, phone number, the tickets you choose and the payment reference.",
+              "Technical data: your browser type, the pages you open and an anonymised IP address in our server logs, kept for security and to fix errors.",
+              "Settings saved on your device, such as light or dark mode. See our Cookie Notice."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "We do not ask for sensitive personal data such as health, religion or political opinion, and we ask you not to send it in a message."
+          }
+        ]
+      },
+      {
+        "id": "why-we-use-it",
+        "heading": "Why we use it",
+        "body": [
+          {
+            "type": "ul",
+            "items": [
+              "To reply to your message and keep a record of the conversation.",
+              "To register you for a course, send joining details and class reminders by email, SMS or WhatsApp, with your consent.",
+              "To run fair votes: to send you a code, stop duplicate or automated votes and count every valid vote once.",
+              "To issue, deliver and check tickets, and to contact you if an event changes.",
+              "To keep the website secure and working, and to understand which guides are useful.",
+              "To meet our legal and accounting duties, for example keeping payment records."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "We rely on your consent, on the need to deliver a service you asked for, on our legal duties, and on our legitimate interest in running a safe, fair website. Where we rely on consent, you can withdraw it at any time."
+          }
+        ]
+      },
+      {
+        "id": "voting-data",
+        "heading": "Voting data",
+        "body": [
+          {
+            "type": "p",
+            "text": "We never publish who voted or who they voted for. Public vote counts show totals only."
+          },
+          {
+            "type": "p",
+            "text": "Your phone number or email is used to send a one time code. To stop duplicate voting we keep a scrambled (hashed) version of it with your vote. The full number or email is deleted 12 months after the results are published, unless a dispute is still open."
+          },
+          {
+            "type": "p",
+            "text": "Nominees' names, photos, towns and short profiles are published with their permission. A nominee can ask us to remove their profile at any time."
+          }
+        ]
+      },
+      {
+        "id": "payments",
+        "heading": "Payments",
+        "body": [
+          {
+            "type": "p",
+            "text": "Payments for tickets, Boost votes and VIP packages are handled by licensed payment providers (mobile money networks and card processors). They collect the payment details directly. We never see or store your mobile money PIN or full card number. We receive a payment reference, the amount and whether it succeeded."
+          }
+        ]
+      },
+      {
+        "id": "sharing",
+        "heading": "Who we share it with",
+        "body": [
+          {
+            "type": "p",
+            "text": "We do not sell or rent your personal data."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Service providers who work for us under contract: website hosting, email and SMS delivery, and payment providers.",
+              "Course partners: when you register for the free AI course, we share your name and email with Cyberiad Labs so they can send you your course link. Their own privacy policy then applies to your course account.",
+              "Authorities: when the law requires it, or to protect people from fraud or harm."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "outside-uganda",
+        "heading": "Data stored outside Uganda",
+        "body": [
+          {
+            "type": "p",
+            "text": "Some of our service providers, such as hosting and email services, store data outside Uganda. We only use providers in countries or under contracts that give protection at least equal to Ugandan law, or we ask for your consent first, as the Act requires."
+          }
+        ]
+      },
+      {
+        "id": "how-long",
+        "heading": "How long we keep it",
+        "body": [
+          {
+            "type": "ul",
+            "items": [
+              "Messages: two years after our last reply.",
+              "Course registrations: three years after the course ends, so we can confirm your participation.",
+              "Votes: full contact details for 12 months after results; vote totals are kept as a public record.",
+              "Ticket and payment records: as long as tax and accounting law requires.",
+              "Server logs: 90 days."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "After that we delete the data or make it anonymous."
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "heading": "How we protect it",
+        "body": [
+          {
+            "type": "p",
+            "text": "The website uses HTTPS. Access to personal data is limited to staff who need it, each with their own account and password. Admin accounts can be switched off at any time. We back up data and test our systems regularly."
+          },
+          {
+            "type": "p",
+            "text": "If a breach puts your data at risk, we will report it to the Personal Data Protection Office and tell you, as the Act requires, with what happened and what you can do."
+          }
+        ]
+      },
+      {
+        "id": "children",
+        "heading": "Children",
+        "body": [
+          {
+            "type": "p",
+            "text": "Our guides are for everyone, but we do not knowingly collect personal data from anyone under 18 without the consent of a parent or guardian. Voting and buying tickets are for people aged 18 and over, or younger people with a parent or guardian's permission. If you think a child has given us data without consent, contact us and we will delete it."
+          }
+        ]
+      },
+      {
+        "id": "your-rights",
+        "heading": "Your rights",
+        "body": [
+          {
+            "type": "p",
+            "text": "Under the Data Protection and Privacy Act, 2019 you can:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Ask what personal data we hold about you and get a copy.",
+              "Ask us to correct data that is wrong or out of date.",
+              "Ask us to delete your data, or to stop using it, where we have no legal reason to keep it.",
+              "Withdraw consent, for example to stop course reminders.",
+              "Complain to the Personal Data Protection Office (pdpo.go.ug) if you are unhappy with how we handled your data."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Email getdigital256@gmail.com with your request. We may ask you to confirm who you are, and we reply within 30 days."
+          }
+        ]
+      },
+      {
+        "id": "changes",
+        "heading": "Changes to this policy",
+        "body": [
+          {
+            "type": "p",
+            "text": "If we change how we use personal data, we update this page and the date at the top. For important changes we will also tell people we have contact details for."
+          }
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "slug": "terms",
+    "title": "Terms of Use",
+    "summary": "The rules for using gd256.org, our guides, forms, voting and events.",
+    "updatedAt": "2026-11-16",
+    "sections": [
+      {
+        "id": "agreement",
+        "heading": "Using this website",
+        "body": [
+          {
+            "type": "p",
+            "text": "gd256.org is run by GetDigital LTD, Lira, Uganda. By using the website you agree to these terms. If you do not agree, please do not use it."
+          },
+          {
+            "type": "p",
+            "text": "Voting has its own Voting Rules and tickets have their own Ticket Terms. Those apply as well when you vote or buy a ticket."
+          }
+        ]
+      },
+      {
+        "id": "our-content",
+        "heading": "Our guides and information",
+        "body": [
+          {
+            "type": "p",
+            "text": "Our guides are written to help people use technology, in plain language. We check them carefully and update them when things change, but technology moves fast and we cannot promise every detail is complete or current."
+          },
+          {
+            "type": "p",
+            "text": "Our content is general information. It is not legal, financial, medical or professional advice for your situation. Check important decisions with a qualified person."
+          }
+        ]
+      },
+      {
+        "id": "copyright",
+        "heading": "Copyright and our name",
+        "body": [
+          {
+            "type": "p",
+            "text": "Text, photos, videos, the GetDigital name and logo belong to GetDigital LTD or the people who licensed them to us. You may share links to our pages and quote short parts with credit to GetDigital256 and a link. You may not copy whole guides, sell our content or use our logo in a way that suggests we endorse you, without written permission."
+          },
+          {
+            "type": "p",
+            "text": "Partner names and logos belong to those partners and are shown with their permission."
+          }
+        ]
+      },
+      {
+        "id": "what-you-send",
+        "heading": "What you send us",
+        "body": [
+          {
+            "type": "p",
+            "text": "When you send a message, a nomination or a comment, you confirm it is true and yours to share. You allow us to use it to respond and, for nominations, to publish the nominee's public profile once the nominee agrees."
+          }
+        ]
+      },
+      {
+        "id": "fair-use",
+        "heading": "Things you must not do",
+        "body": [
+          {
+            "type": "ul",
+            "items": [
+              "Break the law, or harass, threaten or impersonate anyone.",
+              "Use bots, scripts or fake contact details to vote, register or buy tickets.",
+              "Try to get into accounts, systems or data that are not yours, or disrupt the website.",
+              "Upload viruses or harmful code.",
+              "Copy large parts of the website automatically."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "We may block access, cancel votes or cancel tickets where these terms are broken."
+          }
+        ]
+      },
+      {
+        "id": "other-sites",
+        "heading": "Links to other websites",
+        "body": [
+          {
+            "type": "p",
+            "text": "We link to partners and useful tools. We do not control those websites and are not responsible for them. Their own terms and privacy policies apply. The free AI course is delivered by Cyberiad Labs on their platform under their terms."
+          }
+        ]
+      },
+      {
+        "id": "liability",
+        "heading": "Our responsibility to you",
+        "body": [
+          {
+            "type": "p",
+            "text": "We work to keep the website available and safe, but we cannot promise it will always be free of errors or interruptions. As far as the law allows, GetDigital is not responsible for losses that come from using, or not being able to use, the website or our guides. Nothing in these terms limits rights you have under Ugandan law that cannot be limited."
+          }
+        ]
+      },
+      {
+        "id": "law",
+        "heading": "Law and disputes",
+        "body": [
+          {
+            "type": "p",
+            "text": "These terms are governed by the laws of Uganda. If something goes wrong, please contact us first at getdigital256@gmail.com so we can try to fix it. Disputes we cannot settle go to the courts of Uganda."
+          }
+        ]
+      },
+      {
+        "id": "changes",
+        "heading": "Changes",
+        "body": [
+          {
+            "type": "p",
+            "text": "We may update these terms. The date at the top shows the latest version. Using the website after a change means you accept the new terms."
+          }
+        ]
+      }
+    ]
+  },
+  "voting-rules": {
+    "slug": "voting-rules",
+    "title": "Voting Rules",
+    "summary": "How voting works on GetDigital256: free votes, Boost votes, VIP voter packages, fair play and how results are decided.",
+    "updatedAt": "2026-11-16",
+    "sections": [
+      {
+        "id": "who-can-vote",
+        "heading": "Who can vote",
+        "body": [
+          {
+            "type": "p",
+            "text": "Anyone with a working phone number or email address can vote. Voters under 18 need a parent or guardian's permission. GetDigital staff and judges may vote in public categories, but not in categories they help to judge."
+          }
+        ]
+      },
+      {
+        "id": "how-to-vote",
+        "heading": "How to vote",
+        "body": [
+          {
+            "type": "ul",
+            "items": [
+              "Open a campaign and choose a category.",
+              "Pick a nominee and tap Vote.",
+              "Enter your phone number or email. We send you a six digit code.",
+              "Enter the code to confirm. Your free vote counts straight away.",
+              "To add more, choose Boost votes or a VIP voter package and pay on the secure payment page."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "free-votes",
+        "heading": "Free votes",
+        "body": [
+          {
+            "type": "p",
+            "text": "Every verified voter gets one free vote per category per day while a campaign is open. One phone number or email address counts as one voter. Unused free votes do not carry over to the next day."
+          }
+        ]
+      },
+      {
+        "id": "paid-votes",
+        "heading": "Boost votes and VIP voter packages",
+        "body": [
+          {
+            "type": "p",
+            "text": "Some campaigns let supporters, such as family, friends, schools or colleagues, add more votes for a nominee. Paying is optional, and free votes count exactly the same as paid ones."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Boost votes: choose how many votes to add, from 1 up to the campaign's limit. The price per vote is shown before you pay.",
+              "VIP voter packages: one payment adds a set number of votes straight away, then extra votes for the same nominee every day until voting closes, plus the perks listed, such as an event ticket.",
+              "VIP daily votes go to the nominee you chose. You can ask us to move them to another nominee in the same campaign before the next day starts.",
+              "You pay on our payment partner's secure page by MTN Mobile Money, Airtel Money or card. GetDigital never sees your PIN or card number.",
+              "Votes are added only when the payment partner confirms the payment to our server. If a payment fails, no votes are added and nothing is charged.",
+              "Paid votes are not refundable once added, unless the campaign is cancelled or you were charged twice by mistake.",
+              "Money from paid votes funds GetDigital's free digital skills programmes."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Campaigns that do not offer paid votes are decided by free votes only."
+          }
+        ]
+      },
+      {
+        "id": "live-counts",
+        "heading": "Live counts",
+        "body": [
+          {
+            "type": "p",
+            "text": "Vote totals are public and update while a campaign is open. Totals can go down if we remove invalid votes."
+          }
+        ]
+      },
+      {
+        "id": "fair-play",
+        "heading": "Fair play",
+        "body": [
+          {
+            "type": "p",
+            "text": "These are not allowed and the votes will be removed:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Votes from bots, scripts or automated tools.",
+              "Fake, temporary or borrowed phone numbers or email addresses used to vote many times.",
+              "Paying other people to vote, or selling votes outside GetDigital's own Boost votes and VIP packages.",
+              "Tricking or pressuring people into voting."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "We may disqualify a nominee who takes part in or knowingly benefits from cheating. Our decision on whether a vote is valid is final, and we keep a record of every vote we remove."
+          }
+        ]
+      },
+      {
+        "id": "nominees",
+        "heading": "Nominees",
+        "body": [
+          {
+            "type": "p",
+            "text": "Every nominee agrees to be listed before their profile goes live. A nominee can withdraw at any time before voting closes; their votes are then removed. Nominees may share their voting link and ask people to vote, but must follow these rules."
+          }
+        ]
+      },
+      {
+        "id": "results",
+        "heading": "Results",
+        "body": [
+          {
+            "type": "p",
+            "text": "When voting closes, we check the votes, remove any that break these rules and publish the results on the date shown on the campaign. The nominee with the most valid votes in each category wins, unless the campaign says a panel of judges also takes part."
+          },
+          {
+            "type": "p",
+            "text": "To question a result, email getdigital256@gmail.com within 7 days of publication."
+          }
+        ]
+      },
+      {
+        "id": "privacy",
+        "heading": "Your privacy",
+        "body": [
+          {
+            "type": "p",
+            "text": "We never publish who voted or who they voted for. See our Privacy Policy for how we use and keep voting data."
+          }
+        ]
+      },
+      {
+        "id": "changes",
+        "heading": "Changes and cancellation",
+        "body": [
+          {
+            "type": "p",
+            "text": "We may extend, pause or cancel a campaign if there is a technical problem or cheating that affects the result. We will explain why on the campaign page. If a campaign with paid votes is cancelled, payments for votes are refunded."
+          }
+        ]
+      }
+    ]
+  },
+  "ticket-terms": {
+    "slug": "ticket-terms",
+    "title": "Ticket Terms and Refunds",
+    "summary": "What you agree to when you get a free or paid ticket to a GetDigital event, and how refunds work.",
+    "updatedAt": "2026-11-16",
+    "sections": [
+      {
+        "id": "your-ticket",
+        "heading": "Your ticket",
+        "body": [
+          {
+            "type": "p",
+            "text": "After you book, we send your tickets by email, each with its own QR code and ticket code. Each code lets one person in once. Keep it private: the first person to show it at the door gets in."
+          },
+          {
+            "type": "p",
+            "text": "Bring your ticket on your phone or printed, and an ID if the event asks for one (for example a student ID for student tickets)."
+          }
+        ]
+      },
+      {
+        "id": "prices",
+        "heading": "Prices and payment",
+        "body": [
+          {
+            "type": "p",
+            "text": "Prices are in Uganda shillings and include any booking fee. You can pay by MTN Mobile Money, Airtel Money or card. Your tickets are issued once payment is confirmed. If payment fails, no tickets are issued and nothing is charged."
+          }
+        ]
+      },
+      {
+        "id": "free-tickets",
+        "heading": "Free tickets",
+        "body": [
+          {
+            "type": "p",
+            "text": "Free tickets hold a seat for you. If you cannot come, please cancel from the link in your email so someone else can have the seat. Seats not claimed 15 minutes after the start may be given to people waiting at the door."
+          }
+        ]
+      },
+      {
+        "id": "refunds",
+        "heading": "Refunds",
+        "body": [
+          {
+            "type": "ul",
+            "items": [
+              "If we cancel an event, you get a full refund to the number or card you paid with, within 14 days.",
+              "If we move an event to a new date, your ticket is valid for the new date. If you cannot attend, ask for a full refund within 7 days of the announcement.",
+              "If you cannot attend, ask for a refund up to 7 days before the event. We refund the ticket price minus any payment provider fee.",
+              "Less than 7 days before the event, tickets are not refundable, but you can transfer your ticket to someone else by emailing us their name up to 48 hours before."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "at-the-event",
+        "heading": "At the event",
+        "body": [
+          {
+            "type": "p",
+            "text": "Please respect other guests, speakers and staff. We may refuse entry or ask anyone to leave who is violent, abusive or breaks the venue's rules, without a refund. Age limits are shown on each event page."
+          },
+          {
+            "type": "p",
+            "text": "We take photos and videos at events for our website and social media. Tell a staff member at the door if you do not want to appear, and we will respect that."
+          }
+        ]
+      },
+      {
+        "id": "changes",
+        "heading": "Changes to the programme",
+        "body": [
+          {
+            "type": "p",
+            "text": "Speakers and times can change. We will update the event page and email ticket holders about important changes."
+          }
+        ]
+      },
+      {
+        "id": "responsibility",
+        "heading": "Our responsibility",
+        "body": [
+          {
+            "type": "p",
+            "text": "Please look after your belongings. As far as the law allows, GetDigital is not responsible for loss of personal items, or for travel and accommodation costs if an event changes. Nothing here limits your rights under Ugandan law."
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "heading": "Questions",
+        "body": [
+          {
+            "type": "p",
+            "text": "Email getdigital256@gmail.com with your order reference (it starts with GD) and we will help."
+          }
+        ]
+      }
+    ]
+  },
+  "cookies": {
+    "slug": "cookies",
+    "title": "Cookie Notice",
+    "summary": "The small files and settings gd256.org saves on your device, and why.",
+    "updatedAt": "2026-11-16",
+    "sections": [
+      {
+        "id": "what",
+        "heading": "What we save on your device",
+        "body": [
+          {
+            "type": "p",
+            "text": "Websites can save small pieces of information in your browser, as cookies or in browser storage. We keep this to the minimum the website needs."
+          }
+        ]
+      },
+      {
+        "id": "essential",
+        "heading": "Essential storage",
+        "body": [
+          {
+            "type": "ul",
+            "items": [
+              "Light or dark mode: remembers the theme you chose (gd-theme). Kept until you clear it.",
+              "Voting: remembers that you already voted in a category today, so we can show it on your screen. The real check happens on our server.",
+              "Admin sign in: keeps GetDigital staff signed in to the admin dashboard until they close the browser tab."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "These are needed for the website to work and do not track you across other websites."
+          }
+        ]
+      },
+      {
+        "id": "analytics",
+        "heading": "Analytics and advertising",
+        "body": [
+          {
+            "type": "p",
+            "text": "We do not use advertising cookies. If we add visitor statistics in future, we will use a privacy friendly tool, update this notice and ask for your consent where the law requires it."
+          }
+        ]
+      },
+      {
+        "id": "embedded",
+        "heading": "Embedded content",
+        "body": [
+          {
+            "type": "p",
+            "text": "Some pages may show content from other services, such as YouTube videos. Those services may set their own cookies when you play the content. Their own policies apply."
+          }
+        ]
+      },
+      {
+        "id": "control",
+        "heading": "Your choices",
+        "body": [
+          {
+            "type": "p",
+            "text": "You can clear saved data in your browser settings at any time. The website will still work, but it may forget your theme choice."
+          }
+        ]
+      }
+    ]
+  }
+}
