@@ -2,6 +2,8 @@
    shows loading, success and error states. */
 import { CircleAlert, CircleCheck, Send } from "lucide-react";
 
+import { Link } from "react-router-dom";
+
 import Button from "@/components/ui/Button";
 import { Checkbox, Field, Select, TextInput } from "@/components/ui/Field";
 import { useRegisterForCourse } from "@/store/tanstackStore/queries/site";
@@ -82,7 +84,13 @@ export default function CourseRegistrationForm({ startLabel, onDone }) {
           <Select field={role} options={ROLES} />
         </Field>
       </div>
-      <Checkbox field={consent}>I agree that GetDigital256 can contact me about this course by email, SMS or WhatsApp.</Checkbox>
+      <Checkbox field={consent}>
+        I agree that GetDigital256 can contact me about this course by email, SMS or WhatsApp, and share my name and email with Cyberiad Labs for my course link. See our{" "}
+        <Link to="/privacy" target="_blank" className="font-semibold text-link underline-offset-4 hover:underline">
+          Privacy Policy
+        </Link>
+        .
+      </Checkbox>
       <Button type="submit" size="lg" icon={Send} loading={mutation.isPending} className="w-full sm:w-auto sm:self-start">
         {mutation.isPending ? "Sending" : "Register for free"}
       </Button>
