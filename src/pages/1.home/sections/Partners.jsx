@@ -2,6 +2,7 @@
 import { ArrowRight } from "lucide-react";
 
 import { Reveal } from "@/components/motion/Reveal";
+import NodeMark from "@/components/site/NodeMark";
 import PartnerGrid from "@/components/site/PartnerGrid";
 import Button from "@/components/ui/Button";
 import { usePageCopy } from "@/store/tanstackStore/queries/site";
@@ -13,8 +14,8 @@ export default function Partners() {
       <div className="container-gd grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-12">
         <Reveal className="lg:col-span-5 xl:col-span-4">
           <div className="lg:sticky lg:top-28">
-            <p className="eyebrow text-link">{partners.eyebrow}</p>
-            <h2 id="partners-title" className="mt-3 text-h2">
+            <NodeMark number="03" label={partners.eyebrow} />
+            <h2 id="partners-title" className="mt-4 text-h2">
               {partners.title}
             </h2>
             <p className="mt-4 max-w-[46ch] text-body-lg text-muted">{partners.text}</p>
