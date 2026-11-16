@@ -1,6 +1,8 @@
 /* Contact form with inline validation and loading, success and error states. */
 import { CircleAlert, CircleCheck, Send } from "lucide-react";
 
+import { Link } from "react-router-dom";
+
 import Button from "@/components/ui/Button";
 import { Field, TextArea, TextInput } from "@/components/ui/Field";
 import { useSendMessage } from "@/store/tanstackStore/queries/site";
@@ -72,6 +74,13 @@ export default function ContactForm() {
       <Button type="submit" size="lg" icon={Send} loading={mutation.isPending} className="w-full sm:w-auto sm:self-start">
         {mutation.isPending ? "Sending" : "Send message"}
       </Button>
+      <p className="text-small text-muted">
+        We use your details only to reply to you. See our{" "}
+        <Link to="/privacy" className="font-semibold text-link underline-offset-4 hover:underline">
+          Privacy Policy
+        </Link>
+        .
+      </p>
     </form>
   );
 }
