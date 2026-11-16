@@ -1,3 +1,210 @@
 [
-  { "id": "e1", "slug": "sample-event", "title": "Sample GetDigital Event", "venue": "Lira", "startsAt": "2027-01-11T09:00:00Z", "description": "Placeholder event.", "image": null, "status": "draft" }
+  {
+    "id": "ev-ai-launch",
+    "slug": "ai-cohort-launch-day-lira",
+    "title": "Introduction to AI and LLMs: Lira Launch Day",
+    "summary": "Meet the team, set up your free AI course account and try your first AI tools, two days before the January cohort starts.",
+    "category": "Workshop",
+    "featured": true,
+    "status": "published",
+    "startsAt": "2027-01-09T07:00:00Z",
+    "endsAt": "2027-01-09T11:00:00Z",
+    "venue": "Amara Hub Building",
+    "address": "Plot 62, Lira to Gulu Road",
+    "city": "Lira",
+    "image": "/images/events/ai-cohort-launch-day-lira.webp",
+    "imageAlt": "Learners setting up the AI course on their phones",
+    "organiser": "GetDigital256",
+    "ageNote": "Open to anyone 16 and over.",
+    "description": [
+      {
+        "type": "p",
+        "text": "The free Introduction to AI and LLMs course starts on Monday, 11 January 2027. This launch day helps you start ready: we set up your course account with you, show you how to save data while learning, and try a few AI tools together."
+      },
+      {
+        "type": "p",
+        "text": "Bring a charged smartphone or laptop. Wi-Fi is provided for the morning. Seats are limited, so get a free ticket to hold your place."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Set up your Cyberiad Labs course account",
+          "Install the small offline AI model that comes with the course",
+          "Learn how to check what AI tells you",
+          "Meet other learners in your cohort"
+        ]
+      }
+    ],
+    "agenda": [
+      {
+        "time": "10:00",
+        "title": "Welcome and introductions"
+      },
+      {
+        "time": "10:30",
+        "title": "What AI is, and where it fails"
+      },
+      {
+        "time": "11:15",
+        "title": "Account setup, with helpers on hand"
+      },
+      {
+        "time": "12:30",
+        "title": "Try it: your first useful prompts"
+      },
+      {
+        "time": "13:30",
+        "title": "Questions and close"
+      }
+    ],
+    "speakers": [
+      {
+        "name": "Ronald Desmond Otim",
+        "role": "Founder, GetDigital"
+      },
+      {
+        "name": "Steven Opio",
+        "role": "Operations lead, GetDigital"
+      }
+    ]
+  },
+  {
+    "id": "ev-gala-2026",
+    "slug": "getdigital-awards-gala-2026",
+    "title": "GetDigital Awards 2026: Gala Night",
+    "summary": "An evening to celebrate this year's nominees and announce the winners of the GetDigital Awards 2026.",
+    "category": "Awards",
+    "featured": false,
+    "status": "published",
+    "startsAt": "2026-12-19T15:00:00Z",
+    "endsAt": "2026-12-19T20:00:00Z",
+    "venue": "Amara Hub Hall",
+    "address": "Plot 62, Lira to Gulu Road",
+    "city": "Lira",
+    "image": "/images/events/getdigital-awards-gala-2026.webp",
+    "imageAlt": "Guests at an evening awards ceremony",
+    "organiser": "GetDigital256",
+    "ageNote": "Open to guests 18 and over.",
+    "voteSlug": "getdigital-awards-2026",
+    "description": [
+      {
+        "type": "p",
+        "text": "Join the nominees, partners and supporters of GetDigital for dinner, music and the announcement of the GetDigital Awards 2026 winners in all five categories."
+      },
+      {
+        "type": "p",
+        "text": "Voting closes on 12 December 2026. Results are announced live on the night and published on our website the same evening."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Dinner and soft drinks included with every ticket",
+          "Live music and a short film on this year's nominees",
+          "Winners announced in all five categories"
+        ]
+      }
+    ],
+    "agenda": [
+      {
+        "time": "18:00",
+        "title": "Arrival and photos"
+      },
+      {
+        "time": "19:00",
+        "title": "Dinner"
+      },
+      {
+        "time": "20:00",
+        "title": "Awards ceremony"
+      },
+      {
+        "time": "22:00",
+        "title": "Music and networking"
+      }
+    ],
+    "speakers": [
+      {
+        "name": "Ronald Desmond Otim",
+        "role": "Founder, GetDigital"
+      }
+    ]
+  },
+  {
+    "id": "ev-sme-clinic",
+    "slug": "small-business-digital-clinic-feb-2027",
+    "title": "Small Business Digital Clinic",
+    "summary": "A hands on morning for small business owners: Google Maps listing, WhatsApp Business, mobile money records and simple AI tools.",
+    "category": "Clinic",
+    "featured": false,
+    "status": "published",
+    "startsAt": "2027-02-06T06:00:00Z",
+    "endsAt": "2027-02-06T10:00:00Z",
+    "venue": "Amara Hub Building",
+    "address": "Plot 62, Lira to Gulu Road",
+    "city": "Lira",
+    "image": "/images/events/small-business-digital-clinic-feb-2027.webp",
+    "imageAlt": "A shop owner updating a business listing on a phone",
+    "organiser": "GetDigital256",
+    "ageNote": "For business owners and staff.",
+    "description": [
+      {
+        "type": "p",
+        "text": "Bring your phone and your business questions. In one morning you leave with your shop on Google Maps, a WhatsApp Business catalogue and a simple way to track sales."
+      },
+      {
+        "type": "p",
+        "text": "Small groups of eight, each with a trainer."
+      }
+    ],
+    "agenda": [
+      {
+        "time": "09:00",
+        "title": "Get found: Google Maps listing"
+      },
+      {
+        "time": "10:00",
+        "title": "Sell on WhatsApp Business"
+      },
+      {
+        "time": "11:00",
+        "title": "Track money in and out"
+      },
+      {
+        "time": "12:00",
+        "title": "AI for product descriptions and replies"
+      }
+    ],
+    "speakers": [
+      {
+        "name": "GetDigital trainers",
+        "role": "GetDigital256"
+      }
+    ]
+  },
+  {
+    "id": "ev-safety-2026",
+    "slug": "online-safety-for-parents-oct-2026",
+    "title": "Online Safety for Parents",
+    "summary": "A free evening talk on keeping children safe online.",
+    "category": "Talk",
+    "featured": false,
+    "status": "ended",
+    "startsAt": "2026-10-17T14:00:00Z",
+    "endsAt": "2026-10-17T16:00:00Z",
+    "venue": "Amara Hub Building",
+    "address": "Plot 62, Lira to Gulu Road",
+    "city": "Lira",
+    "image": "/images/events/online-safety-for-parents-oct-2026.webp",
+    "imageAlt": "Parents at an evening talk",
+    "organiser": "GetDigital256",
+    "ageNote": "",
+    "description": [
+      {
+        "type": "p",
+        "text": "Parents learned how to set up phones for children, what apps to watch and how to talk about online safety at home."
+      }
+    ],
+    "agenda": [],
+    "speakers": []
+  }
 ]
