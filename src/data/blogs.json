@@ -1,6 +1,519 @@
 [
-  { "id": "b1", "slug": "learn-ai-on-a-phone", "title": "How to Learn AI on a Phone and a Zero Budget", "categoryId": "ai-digital-tools", "author": "getdigitalug", "excerpt": "Most AI learning guides assume laptops, reliable internet and course fees. Here is how to start with just a phone.", "image": null, "status": "published", "publishedAt": "2026-11-13" },
-  { "id": "b2", "slug": "ai-skills-ugandan-job-ads", "title": "Why AI Skills Keep Showing Up in Ugandan Job Ads", "categoryId": "ai-digital-tools", "author": "getdigitalug", "excerpt": "Employers want workers who use AI tools, not build them.", "image": null, "status": "published", "publishedAt": "2026-11-13" },
-  { "id": "b3", "slug": "ai-for-teachers-in-uganda", "title": "How Ugandan Teachers Can Stay One Step Ahead of AI", "categoryId": "ai-digital-tools", "author": "getdigitalug", "excerpt": "What teachers can do about AI-generated work in the classroom.", "image": null, "status": "published", "publishedAt": "2026-11-12" },
-  { "id": "b4", "slug": "what-to-do-before-job-hunting-in-uganda", "title": "What Ugandan Graduates Should Do Before Job Hunting", "categoryId": "digital-skills", "author": "getdigitalug", "excerpt": "Uganda produces over 700,000 graduates a year; far fewer enter formal employment.", "image": null, "status": "published", "publishedAt": "2026-11-12" }
+  {
+    "id": "b1",
+    "slug": "learn-ai-on-a-phone",
+    "title": "How to Learn AI on a Phone and a Zero Budget",
+    "categoryId": "ai-digital-tools",
+    "author": "GetDigital256 Editorial Team",
+    "excerpt": "Most AI learning guides assume laptops, reliable internet and course fees. Here is how to start with just a phone.",
+    "image": null,
+    "imageAlt": "A Ugandan learner studying an AI course on a smartphone outdoors",
+    "tags": [
+      "AI",
+      "Free courses",
+      "Mobile learning"
+    ],
+    "status": "published",
+    "publishedAt": "2026-11-13T22:56:24Z",
+    "updatedAt": "2026-11-13T22:56:25Z",
+    "body": [
+      {
+        "type": "p",
+        "text": "Most AI learning guides are written for people with laptops, reliable Wi-Fi, and money for course fees. That doesn’t describe a lot of learners in Uganda. The Uganda Communications Commission puts average monthly data spending at about 11,000 shillings per subscriber. A UNICEF digital readiness assessment found that only 20% of secondary schools in the country are fully equipped with electricity, digital devices, and internet connectivity. For a huge number of people, a smartphone is the only computing device they’ve got."
+      },
+      {
+        "type": "p",
+        "text": "A phone and a zero budget are genuinely enough to get started with AI, though. Several respected platforms offer structured courses that run fully in a mobile browser or app, and some don’t even need video streaming. The rest of this guide breaks down exactly which courses work on a phone, how to manage your data costs, and how to stay consistent when there’s no classroom pushing you along."
+      },
+      {
+        "type": "h2",
+        "text": "Your Phone Can Handle More Than You Think"
+      },
+      {
+        "type": "p",
+        "text": "AI education has changed a lot in the past two years. Top learning platforms now build their courses with mobile users in mind. The Coursera app, available on Android and iOS, lets you download lessons for offline viewing. Watch a lecture while you’re on Wi-Fi, save it to your phone’s storage, and review it later without burning a single megabyte."
+      },
+      {
+        "type": "p",
+        "text": "Text-based courses go even further. A typical text-and-image module uses roughly 1 to 3 MB of data, according to learning platform estimates. Video? That eats 300 MB to 700 MB per hour depending on quality. If you’re counting every megabyte, picking text-first courses over video-heavy ones will stretch your budget much further."
+      },
+      {
+        "type": "p",
+        "text": "And you don’t need to run code on your phone to learn the foundations. Elements of AI, created by the University of Helsinki and MinnaLearn, covers core AI concepts through readings and exercises that work entirely in a mobile browser. No programming required, no advanced math. Over two million students across 170 countries have completed it."
+      },
+      {
+        "type": "h2",
+        "text": "Free AI Courses That Actually Work on a Phone"
+      },
+      {
+        "type": "p",
+        "text": "Not every free course is built for phone-only learners. Some depend on coding environments that look terrible on small screens. Others lock everything useful behind a paywall. The platforms below were picked because they deliver real learning on a phone without charging you anything."
+      },
+      {
+        "type": "p",
+        "text": "IBM SkillsBuild has an AI Fundamentals track that’s completely free, certificate included. It takes about 10 hours and covers what AI is, how machine learning works, natural language processing, computer vision, and AI ethics. No enrollment fee. No exam fee. No certificate charge. IBM designed SkillsBuild as a browser-based platform, so it works on a phone without needing to install an app."
+      },
+      {
+        "type": "p",
+        "text": "Elements of AI is another strong option. You can complete the introductory course on a mobile device with no coding background. It takes roughly 20 to 50 hours depending on your pace, it’s available in multiple languages, and it’s genuinely free with no hidden paywalls."
+      },
+      {
+        "type": "p",
+        "text": "For learners who want a guided path instead of scattered YouTube videos, enrolling in a structured free AI course can make a real difference. A structured course gives you a clear sequence of topics, progress tracking, and a sense of completion you won’t get from jumping between random videos."
+      },
+      {
+        "type": "p",
+        "text": "DeepLearning.AI, founded by Andrew Ng, offers over 80 free short courses covering topics from prompt engineering to generative AI. Each one runs one to two hours and is browser-based. Fair warning: some courses include coding labs that work better on a larger screen. But the video lectures and conceptual material are accessible on a phone."
+      },
+      {
+        "type": "h2",
+        "text": "What Different Learning Activities Cost You in Data"
+      },
+      {
+        "type": "p",
+        "text": "Data costs aren’t a side concern for Ugandan learners. They’re a real barrier. A study by NetCredit found that broadband in Uganda costs about 34.53% of the average monthly income, making it one of the least affordable countries in the world for getting online. Every megabyte matters."
+      },
+      {
+        "type": "p",
+        "text": "A rough guide to what you’ll actually spend:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Text-based course module (with images, no video): 1 to 3 MB",
+          "Low-quality video streaming (240p to 360p): about 300 MB per hour",
+          "Standard definition video (480p): about 700 MB per hour",
+          "Downloading a Coursera lecture for offline viewing: varies, but you control when and where you download",
+          "General web browsing: roughly 60 MB per hour"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "The most data-efficient approach is to stick with text-based platforms like Elements of AI and IBM SkillsBuild during the week, and save video lessons for when you can get on free Wi-Fi. Public libraries, university campuses, and some cafes and community centers in Kampala and other towns offer Wi-Fi you can use to download Coursera lectures ahead of time."
+      },
+      {
+        "type": "p",
+        "text": "One tip for Android users: in the Coursera app, you can set downloads to Wi-Fi only and save content to an SD card. That helps a lot if your phone’s storage is tight."
+      },
+      {
+        "type": "h2",
+        "text": "How to Keep Studying When There’s No Classroom"
+      },
+      {
+        "type": "p",
+        "text": "Learning without a teacher or classmates requires a different kind of discipline. The biggest danger isn’t a lack of resources. It’s losing steam after the first week."
+      },
+      {
+        "type": "p",
+        "text": "Set a fixed daily time. Even 30 minutes a day adds up faster than you’d expect. Do that for a month and you’ve logged 15 hours of learning. That’s enough to finish the IBM SkillsBuild AI Fundamentals track or the introductory Elements of AI course. Pick a slot that fits your routine: early morning, lunch break, evening. Doesn’t matter which, as long as you show up."
+      },
+      {
+        "type": "p",
+        "text": "Finish one course before starting another. Sampling three platforms at once feels productive but usually isn’t. Completing a full course builds a much stronger foundation than half-finishing three of them."
+      },
+      {
+        "type": "p",
+        "text": "Take notes on your phone. Use any free note-taking app to summarize what you’ve learned after each session. Even a few lines will do. Writing things down helps you retain information, and you’ll build a personal reference you can come back to."
+      },
+      {
+        "type": "p",
+        "text": "Find a study partner. If someone you know is also interested in AI, agree to study the same course and talk about what you’re learning. WhatsApp works fine for this and won’t cost extra data. Having someone to exchange ideas with fills some of the gap left by not being in a classroom."
+      },
+      {
+        "type": "p",
+        "text": "Track your progress visually. A simple checklist on paper or in your phone’s notes app can show you how far you’ve come. When motivation drops, seeing a list of completed modules is a useful reminder that you’re actually moving forward."
+      },
+      {
+        "type": "h2",
+        "text": "Why These Skills Matter for Work"
+      },
+      {
+        "type": "p",
+        "text": "AI skills are showing up in job descriptions for data entry, customer service, content creation, digital marketing, and a growing list of other fields. You don’t need to become a machine learning engineer overnight. Just understanding what AI can do, how to write effective prompts, and where AI tools fit into everyday work will already set you apart from most candidates."
+      },
+      {
+        "type": "p",
+        "text": "The barriers are real. Data isn’t free, phone screens are small, and studying alone takes serious commitment. But the courses exist, they’re designed for mobile devices, and they don’t cost anything beyond the data to access them. Start with IBM SkillsBuild or Elements of AI since both are text-first and won’t drain your data. Finish the full course before you pick up a second one. And when free Wi-Fi is available, use it to download Coursera lectures for the days when it isn’t."
+      }
+    ]
+  },
+  {
+    "id": "b2",
+    "slug": "ai-skills-ugandan-job-ads",
+    "title": "Why AI Skills Keep Showing Up in Ugandan Job Ads",
+    "categoryId": "ai-digital-tools",
+    "author": "GetDigital256 Editorial Team",
+    "excerpt": "Employers want workers who use AI tools, not build them.",
+    "image": null,
+    "imageAlt": "A job seeker noticing AI skills appearing in Ugandan job listings",
+    "tags": [
+      "AI",
+      "Careers",
+      "Jobs"
+    ],
+    "status": "published",
+    "publishedAt": "2026-11-13T22:06:49Z",
+    "updatedAt": "2026-11-13T22:06:50Z",
+    "body": [
+      {
+        "type": "p",
+        "text": "Ugandan employers want you to use AI tools, not build them. That’s the short version of what’s happening across job boards like BrighterMonday and Fuzu right now. More postings in banking, telecoms and NGO work list “AI skills” or “proficiency with AI tools” as a desired qualification, and it catches people off guard because these aren’t software engineering roles."
+      },
+      {
+        "type": "p",
+        "text": "The trend is real. But most people are reading it wrong, and that confusion is worth clearing up."
+      },
+      {
+        "type": "h2",
+        "text": "What “AI Skills” Actually Means on a Job Listing"
+      },
+      {
+        "type": "p",
+        "text": "Nobody’s asking you to build machine learning models or write algorithms. When a Ugandan bank, telecom company, or NGO drops “AI skills” into a job ad, they’re talking about practical ability. Can you use ChatGPT, Google Gemini, or Microsoft Copilot to draft reports faster? Can you summarize research without burning three hours on it, or pull insights from a messy dataset without waiting on someone else?"
+      },
+      {
+        "type": "p",
+        "text": "That’s the bar."
+      },
+      {
+        "type": "p",
+        "text": "A communications officer at an NGO who uses AI to produce donor reports in half the time will get noticed. Same goes for a financial analyst flagging suspicious transactions through AI-powered tools instead of wading through slow manual reviews. The question hiring managers ask isn’t “can you code a neural network?” It’s “can you use these tools to do your job better and faster?”"
+      },
+      {
+        "type": "h2",
+        "text": "The Skills Divide Behind the Job Ads"
+      },
+      {
+        "type": "p",
+        "text": "This isn’t about robots coming for anyone’s position. The reason AI skills keep appearing in listings has more to do with a widening gap between what employers need and what most graduates walk in with."
+      },
+      {
+        "type": "p",
+        "text": "A 2026 study published in the Metropolitan Journal of Academic and Applied Research examined this directly. Researchers at Metropolitan International University surveyed over 1,200 respondents across twelve universities, schools and public institutions in Uganda. Their conclusion: AI readiness has a significant effect on employment outcomes, but that effect works indirectly through education quality and skills preparation. In practical terms, AI’s biggest impact on Uganda’s youth job market runs through the skills divide, not through direct job displacement."
+      },
+      {
+        "type": "p",
+        "text": "The Economic Policy Research Centre (EPRC) reached a similar finding. In its analysis of AI and employment, the EPRC noted that lack of relevant skills, including computer and AI literacy, is a direct cause of youth unemployment. Uganda’s national unemployment rate sits at 12.6%. Over half of young Ugandans are neither employed nor in education. Those numbers make closing the digital skills gap urgent, not optional."
+      },
+      {
+        "type": "p",
+        "text": "For job seekers willing to act early, that gap is also an opening. Structured training is faster and more reliable than trying to cobble things together from scattered YouTube videos. A free AI course in Uganda covers the tools employers expect you to know, with organized lessons and real work applications you can practice on your own time."
+      },
+      {
+        "type": "h2",
+        "text": "Which Sectors Are Adopting AI Fastest"
+      },
+      {
+        "type": "p",
+        "text": "Banking and financial services are out front. In April 2026, the Uganda Institute of Banking and Financial Services (UIBFS) signed a memorandum of understanding with Vision Africa AI to expand AI and digital literacy across the financial workforce. The partnership focuses on developing employer-validated certifications in AI, data science, and cybersecurity. Ugandan banks already use AI for credit scoring, customer service, and fraud detection. One Kampala-based institution reported a 70% reduction in fraud cases after deploying AI-powered detection earlier this year."
+      },
+      {
+        "type": "p",
+        "text": "Telecoms are close behind. MTN Uganda and Airtel Uganda actively hire data analysts, data scientists and professionals who can work with AI tools for mobile money operations, network optimization, and customer insights."
+      },
+      {
+        "type": "p",
+        "text": "NGOs and development organizations now regularly include AI tool proficiency in job requirements for research, monitoring and evaluation, communications and data analysis roles."
+      },
+      {
+        "type": "p",
+        "text": "And it goes beyond those three. Agritech companies like EzyAgric and M-Omulimisa apply AI for crop advisory services, while health organizations use AI-powered tools to analyze medical data and track disease outbreaks."
+      },
+      {
+        "type": "h2",
+        "text": "What Level of Knowledge Actually Gets You Hired"
+      },
+      {
+        "type": "p",
+        "text": "For most roles outside dedicated tech teams, the knowledge that satisfies hiring managers is practical, not theoretical:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Familiarity with at least one generative AI tool (such as ChatGPT, Gemini, or Claude) for writing, research, and summarization",
+          "The ability to write clear, specific prompts that produce useful outputs",
+          "Basic awareness of how AI handles data and where its limitations lie",
+          "Comfort using AI features built into workplace software like Microsoft 365 or Google Workspace",
+          "A willingness to keep learning as the tools develop"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Explaining how a large language model works under the hood won’t come up. What matters is showing you can use AI to solve real problems, save time and improve the quality of your output. The World Economic Forum’s Future of Jobs Report 2025 found that 63% of employers globally identified skills gaps as the primary barrier to business transformation, and 77% are committed to reskilling their teams to work alongside AI. Ugandan employers are following the same pattern."
+      },
+      {
+        "type": "h2",
+        "text": "Get Ahead While the Window Is Open"
+      },
+      {
+        "type": "p",
+        "text": "AI skills in Ugandan job ads aren’t a passing phase. Banks are digitizing operations. Telecoms keep expanding data-driven services. NGOs are chasing efficiency gains with tighter budgets. The demand for people who can work confidently with AI tools will keep growing across all of them."
+      },
+      {
+        "type": "p",
+        "text": "You don’t need to become an AI engineer. You need to become someone who uses AI well in their actual work. Start with structured training and practice on real tasks. Be ready to show potential employers what you can do. Right now, most applicants can’t demonstrate real proficiency with these tools. That won’t last forever, but while it’s true, it’s an advantage worth claiming."
+      }
+    ]
+  },
+  {
+    "id": "b3",
+    "slug": "ai-for-teachers-in-uganda",
+    "title": "How Ugandan Teachers Can Stay One Step Ahead of AI",
+    "categoryId": "ai-digital-tools",
+    "author": "GetDigital256 Editorial Team",
+    "excerpt": "What teachers can do about AI-generated work in the classroom.",
+    "image": null,
+    "imageAlt": "A teacher guiding students in a Ugandan classroom",
+    "tags": [
+      "AI",
+      "Education",
+      "Teachers"
+    ],
+    "status": "published",
+    "publishedAt": "2026-11-12T20:20:30Z",
+    "body": [
+      {
+        "type": "p",
+        "text": "Two Senior Six candidates at Masaka Hall got caught using smartphones to pull AI-generated essays during their 2024 UACE history paper. According to The Independent Uganda, it was the first known case of students using AI apps to cheat on a national exam in the country. UNEB and the police investigated. Across the country, schools sat up and paid attention."
+      },
+      {
+        "type": "p",
+        "text": "The problem, though, runs deeper than one exam scandal. The Ministry of Education has cautioned schools about unregulated AI use, but the vast majority of teachers still haven’t received any practical guidance on what these tools actually do or how to deal with them in a classroom."
+      },
+      {
+        "type": "p",
+        "text": "The rest of this piece covers what AI tools can and can’t do, how to spot AI-generated student work, and how to rethink your assignments so AI becomes a learning tool instead of a shortcut."
+      },
+      {
+        "type": "h2",
+        "text": "What ChatGPT Actually Does (and Where It Falls Short)"
+      },
+      {
+        "type": "p",
+        "text": "ChatGPT and similar tools are large language models. They work by predicting the next word in a sentence, drawing on patterns learned from enormous amounts of text. A student types “Write a 500-word essay on the causes of World War I” and gets a polished response in seconds. These tools also summarize notes, translate between languages, answer factual questions, and explain concepts in multiple ways."
+      },
+      {
+        "type": "p",
+        "text": "They don’t think, though. And they certainly don’t understand what they’re writing. The text they produce can sound confident while containing outright factual errors, a problem commonly called “hallucination.” They can’t draw on personal experience, classroom discussions, or local knowledge. Original analysis is another weak spot. And they’ve got no way to verify whether the information they produce is accurate or current."
+      },
+      {
+        "type": "p",
+        "text": "For teachers, this distinction matters more than anything else about AI. These tools are strong at generating generic text on broad topics. They’re weak when a task demands genuine understanding, specific local context, or reasoning that connects to what a student has actually learned in class."
+      },
+      {
+        "type": "h2",
+        "text": "Spend a Few Hours with ChatGPT Before You Judge It"
+      },
+      {
+        "type": "p",
+        "text": "You can’t spot AI-generated work or design better assignments if you’ve never actually used these tools. A few hours with ChatGPT will change that."
+      },
+      {
+        "type": "p",
+        "text": "Try feeding it an assignment you recently gave your students. Pay attention to how it structures the output, what vocabulary it favors, and whether it gets things wrong. You’ll get better at recognizing AI-written text in student submissions quickly. You’ll also notice that changing how you word a prompt changes the output entirely, and that’s useful knowledge when you sit down to write better assignment questions later."
+      },
+      {
+        "type": "p",
+        "text": "For structured training, a free AI course in Uganda walks you through these skills step by step, from understanding how AI works to using it in your own teaching. UNESCO’s AI Competency Framework for Teachers, published in 2024, outlines 15 practical competencies covering AI ethics, AI-enhanced teaching, and professional development. It’s a solid reference for any teacher who wants to move past guesswork and build real confidence with these tools."
+      },
+      {
+        "type": "h2",
+        "text": "Spotting AI-Written Work Without Detection Software"
+      },
+      {
+        "type": "p",
+        "text": "AI detection software exists, but the research is clear: these tools aren’t reliable enough for high-stakes decisions. They can flag genuine student writing as AI-generated, and they miss AI text that’s been lightly edited or blended with a student’s own words. Teachers who rely on detection tools alone risk punishing honest students while the clever ones walk right past."
+      },
+      {
+        "type": "p",
+        "text": "Know your students’ writing instead. Keep samples of in-class work so you’ve got a baseline to compare against take-home assignments. If a student who usually writes short, direct sentences suddenly submits an essay full of advanced vocabulary and perfectly balanced paragraphs, that deserves a second look."
+      },
+      {
+        "type": "p",
+        "text": "Some common signs that a piece of work may be AI-generated:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "The writing is fluent and well-structured but lacks personal voice or specific examples from class.",
+          "Facts or statistics appear without sources, and some turn out to be wrong when checked.",
+          "The essay reads like a textbook summary rather than the student’s own thinking.",
+          "The tone stays oddly consistent throughout, with no shifts in confidence or style.",
+          "The student can’t explain their key arguments when you ask them to."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "A short follow-up conversation is more telling than any software out there. Ask the student to explain their reasoning or describe how they put the assignment together. If they wrote it themselves, they’ll walk you through their thinking without any trouble."
+      },
+      {
+        "type": "h2",
+        "text": "Set Assignments That Make AI Copying Pointless"
+      },
+      {
+        "type": "p",
+        "text": "Banning AI outright isn’t the move. Focus on setting tasks that make copying from it either pointless or immediately obvious."
+      },
+      {
+        "type": "p",
+        "text": "Ask questions rooted in local context. Instead of “Discuss the effects of colonialism in Africa,” try “How did the construction of the Uganda Railway change trade patterns in your district?” AI tools produce broad, generic answers. Questions tied to local history, community experiences, or specific classroom discussions force students to draw on knowledge that ChatGPT simply doesn’t have."
+      },
+      {
+        "type": "p",
+        "text": "You can also build process into every assignment. When students submit an outline, a rough draft, and a reflection alongside their final piece, you can see how their thinking developed over time. Dropping in AI-generated text at the last stage becomes much harder to hide."
+      },
+      {
+        "type": "p",
+        "text": "Including an oral component works just as well. Ask students to present their work briefly or answer two or three follow-up questions in class. This takes very little extra time and immediately reveals whether someone truly understands what they handed in."
+      },
+      {
+        "type": "p",
+        "text": "Consider making AI part of the learning process itself. Assign tasks where students use ChatGPT to generate a first draft, then evaluate that draft for errors, bias, or missing local context. This builds critical thinking and teaches students to engage with AI tools thoughtfully instead of passively copying from them."
+      },
+      {
+        "type": "p",
+        "text": "Uganda’s Ministry of Education and Sports is already moving in this direction. In April 2026, the Ministry partnered with UNESCO to validate a National Policy on ICT in Education, creating a framework for using digital tools in schools more deliberately. Policy takes time to reach individual classrooms, though, and teachers don’t need to wait for official guidelines before getting prepared."
+      },
+      {
+        "type": "h2",
+        "text": "You Don’t Need to Wait for Official Guidelines"
+      },
+      {
+        "type": "p",
+        "text": "AI tools aren’t going away. Students will keep finding new ways to use them, and that pace isn’t slowing down. But a teacher who understands what these tools can do, and more importantly what they can’t, is already ahead of most."
+      },
+      {
+        "type": "p",
+        "text": "Get your hands on the tools yourself. Keep examples of your students’ writing on file. And rethink your assignments so they reward original thinking and specific local knowledge over polished repetition. When students see that their teacher gets how AI works and has designed coursework that values genuine effort, the motivation to cheat drops on its own. That’s a stronger safeguard than any detection tool will ever offer."
+      }
+    ]
+  },
+  {
+    "id": "b4",
+    "slug": "what-to-do-before-job-hunting-in-uganda",
+    "title": "What Ugandan Graduates Should Do Before Job Hunting",
+    "categoryId": "digital-skills",
+    "author": "GetDigital256 Editorial Team",
+    "excerpt": "Uganda produces over 700,000 graduates a year, and far fewer enter formal employment.",
+    "image": null,
+    "imageAlt": "A graduate choosing between paths before starting a job search in Uganda",
+    "tags": [
+      "Careers",
+      "Graduates",
+      "CV"
+    ],
+    "status": "published",
+    "publishedAt": "2026-11-12T12:36:26Z",
+    "updatedAt": "2026-11-12T12:36:27Z",
+    "body": [
+      {
+        "type": "p",
+        "text": "Uganda produces over 700,000 graduates every year. Only about 238,000 of them get absorbed into formal employment. Those numbers aren’t a scare tactic; they’re the reality you’re walking into, and the graduates who act on it before sending out applications are the ones who get hired."
+      },
+      {
+        "type": "p",
+        "text": "Employers across sectors keep saying the same thing: new graduates have strong theoretical knowledge but can’t show the practical and digital skills a workplace actually runs on. That gap between what universities teach and what hiring managers want isn’t closing on its own. But you’ve got a window between graduation and your first real application, and how you use it matters more than most people realize."
+      },
+      {
+        "type": "p",
+        "text": "There are a few things worth doing before you send out a single CV."
+      },
+      {
+        "type": "h2",
+        "text": "Rewrite Your CV Around What You’ve Done, Not What You Studied"
+      },
+      {
+        "type": "p",
+        "text": "Every graduate from your program walked out with the same degree, the same university name, the same graduation year. If your CV reads like a list of courses you completed, it blends into a pile of hundreds that look exactly the same."
+      },
+      {
+        "type": "p",
+        "text": "Focus on demonstrable skills instead. What did you actually do during your studies? Did you analyze data for a dissertation? Organize an event for a student society? Build a website, write reports, or manage a group project? Those are real skills you can describe in specific terms."
+      },
+      {
+        "type": "p",
+        "text": "Short, concrete statements work best. “Coordinated a campus health awareness campaign reaching 500 students” tells an employer something useful. “Good communication skills” tells them nothing. And tailor your CV for each role you apply for. Read the job description carefully, then adjust your language to match what the employer is asking for. A generic CV sent to 50 different employers will almost always lose to a targeted one, even when the targeted applicant has weaker grades."
+      },
+      {
+        "type": "h2",
+        "text": "Pick Up One Skill Employers Are Actively Looking For"
+      },
+      {
+        "type": "p",
+        "text": "You don’t need another degree. What you need is one practical skill that makes your application more relevant to the roles you’re targeting. Digital skills top the list for employers in almost every sector right now, from banking to agriculture to education. The ILO’s Global Employment Trends for Youth 2026 report makes it plain: rapid technological change is reshaping what employers expect from young workers, and graduates who can show digital competence have a clear advantage."
+      },
+      {
+        "type": "p",
+        "text": "AI literacy is probably the fastest-growing competency on the job market. Understanding how artificial intelligence tools work, using them productively, and knowing where they apply in a workplace will set you apart from candidates who’ve never explored them. You don’t need to spend money getting started. A free AI course in Uganda can give you that foundation without the cost barrier that usually slows down post-graduation learning."
+      },
+      {
+        "type": "p",
+        "text": "Data analysis, digital marketing, basic coding, and project management are all worth considering too. Coursera, Google Digital Skills for Africa, and the MTN Skills Academy offer free or affordable courses you can complete on a smartphone. Choose something that connects to the kind of work you want to do, finish it, and put the certification on your CV."
+      },
+      {
+        "type": "h2",
+        "text": "Put Together a Small Portfolio of Real Work"
+      },
+      {
+        "type": "p",
+        "text": "A CV tells employers what you claim you can do. A portfolio shows them. You don’t need a fancy website for this. A Google Drive folder, a simple blog, or a well-organized LinkedIn profile can work just fine."
+      },
+      {
+        "type": "p",
+        "text": "If you studied business, put together a sample marketing plan or a basic financial analysis. IT students: build a small app, create a database, or contribute to an open-source project on GitHub. Writers and journalists can publish pieces on Medium or start a personal blog, and designers should look at Behance or put their work into a clean PDF."
+      },
+      {
+        "type": "p",
+        "text": "It doesn’t need to be large. Two or three solid pieces that show clear thinking and practical ability will do more for you than a long CV full of vague descriptions. If you completed a strong final-year project, that’s your starting point."
+      },
+      {
+        "type": "h2",
+        "text": "Volunteer or Intern to Earn References Worth Having"
+      },
+      {
+        "type": "p",
+        "text": "The experience trap is real. Maddening, actually. Employers ask for experience, but you can’t get experience without a job."
+      },
+      {
+        "type": "p",
+        "text": "Volunteering and short-term internships are the most practical way around it. Look for organizations in your field that accept volunteers or offer graduate placements. NGOs, community organizations, schools, and local businesses often need extra hands and are open to working with recent graduates. The government has expanded its graduate internship programs in recent years, and platforms like BrighterMonday Uganda regularly list entry-level and volunteer openings across the country."
+      },
+      {
+        "type": "p",
+        "text": "What you’re building here isn’t just another line on your CV. You’re earning references from people who’ve watched you work. A strong recommendation from a supervisor who saw you show up consistently, handle tasks on your own, and learn quickly can open doors that a degree certificate alone won’t."
+      },
+      {
+        "type": "h2",
+        "text": "Get Your Name Known Through Tech Hubs and Professional Networks"
+      },
+      {
+        "type": "p",
+        "text": "Many jobs in Uganda get filled through connections and word of mouth. They never hit a job board. If nobody in your target industry knows you exist, you’re invisible to opportunities you’ll never even hear about."
+      },
+      {
+        "type": "p",
+        "text": "Uganda’s innovation hub scene has grown a lot. Spaces like The Innovation Village in Ntinda, Hive Colab in Bukoto, and Outbox Hub regularly host meetups, hackathons, and mentorship sessions. And you don’t need to be in Kampala to access this. MTN Foundation Uganda has opened innovation hubs at universities in Kabale, Soroti, Busitema, and Gulu. Even one event a month can put you in front of people who are hiring or who know someone who is."
+      },
+      {
+        "type": "p",
+        "text": "Online networking counts just as much. Set up a professional LinkedIn profile with a clear headline, a short summary of your skills, and examples of your work. Follow companies you’d like to work for and engage with their posts. Don’t be afraid to send polite messages introducing yourself. Many Ugandan recruiters and hiring managers are active on the platform, and a thoughtful comment or direct message can put your name on someone’s radar well before you submit a formal application."
+      },
+      {
+        "type": "h2",
+        "text": "Use the Weeks After Graduation Instead of Wasting Them"
+      },
+      {
+        "type": "p",
+        "text": "Those first weeks after graduation feel like dead time."
+      },
+      {
+        "type": "p",
+        "text": "They’re not."
+      },
+      {
+        "type": "p",
+        "text": "Pick one or two of these steps and start this week. Rework your CV first, or sign up for a free course. You don’t need to tackle everything at once. The graduates who use this window to prepare, instead of sitting around waiting for a listing to appear, are the ones who walk into interviews with something real to offer."
+      }
+    ]
+  }
 ]
