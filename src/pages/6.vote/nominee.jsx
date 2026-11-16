@@ -7,7 +7,7 @@ import { Link, useParams } from "react-router-dom";
 import { Reveal } from "@/components/motion/Reveal";
 import ShareBar from "@/components/site/ShareBar";
 import NomineeAvatar from "@/components/vote/NomineeAvatar";
-import NomineeRow from "@/components/vote/NomineeRow";
+import Leaderboard from "@/components/vote/Leaderboard";
 import VoteDialog from "@/components/vote/VoteDialog";
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
@@ -27,7 +27,6 @@ export default function NomineePage() {
   const phase = pollPhase(poll);
   const rivals = nominees.filter((n) => n.categoryId === nominee?.categoryId).sort((a, b) => b.votes - a.votes);
   const rank = rivals.findIndex((n) => n.id === nominee?.id) + 1;
-  const catTotal = rivals.reduce((s, n) => s + n.votes, 0);
   const showCounts = Boolean(poll) && phase !== "upcoming" && (poll.showLiveCounts || poll.resultsPublished);
 
   usePageMeta({
@@ -143,21 +142,14 @@ export default function NomineePage() {
             All nominees
           </h2>
           {category?.name && <p className="mt-1 text-muted">Category: {category.name}</p>}
-          <ol className="mt-6 flex flex-col gap-3">
-            {rivals.map((n, i) => (
-              <NomineeRow
-                key={n.id}
-                nominee={n}
-                rank={i + 1}
-                total={catTotal}
-                href={`/vote/${poll.slug}/${n.slug}`}
-                showCounts={showCounts}
-                canVote={phase === "open"}
-                winner={phase === "closed" && poll.resultsPublished && n.winner}
-                onVote={() => setDialog({ mode: "vote", nominee: n })}
-              />
-            ))}
-          </ol>
+          <Leaderboard
+            nominees={rivals}
+            showCounts={showCounts}
+            canVote={phase === "open"}
+            hrefFor={(n) => `/vote/${poll.slug}/${n.slug}`}
+            isWinner={(n) => phase === "closed" && poll.resultsPublished && n.winner}
+            onVote={(n) => setDialog({ mode: "vote", nominee: n })}
+          />
         </section>
       )}
 
