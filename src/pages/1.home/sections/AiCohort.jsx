@@ -1,11 +1,12 @@
 /* Free AI Learning spotlight: light editorial layout on warm stone. Plain course facts,
    a numbered benefit list with hairlines, and a calendar card resting on the photo.
    Registration opens in a modal. */
-import { ArrowRight, Check, MessageCircleQuestion } from "lucide-react";
+import { ArrowRight, MessageCircleQuestion } from "lucide-react";
 import { useState } from "react";
 
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 import CourseRegistrationForm from "@/components/site/CourseRegistrationForm";
+import NodeMark, { HexDot } from "@/components/site/NodeMark";
 import PhotoFrame from "@/components/site/PhotoFrame";
 import Button from "@/components/ui/Button";
 import Modal from "@/components/ui/Modal";
@@ -25,8 +26,8 @@ export default function AiCohort() {
       <div className="container-gd grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-7">
           <Reveal>
-            <p className="eyebrow text-link">{freeAi.eyebrow}</p>
-            <h2 id="free-ai-title" className="mt-3 max-w-[18ch] text-h2">
+            <NodeMark number="02" label={freeAi.eyebrow} />
+            <h2 id="free-ai-title" className="mt-4 max-w-[18ch] text-h2">
               {freeAi.title}
             </h2>
             <p className="mt-4 text-body-lg text-muted">
@@ -34,8 +35,8 @@ export default function AiCohort() {
             </p>
             <ul className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-small font-semibold text-foreground">
               {freeAi.facts.map((f) => (
-                <li key={f} className="flex items-center gap-2">
-                  <Check aria-hidden="true" size={16} strokeWidth={2} className="text-success" />
+                <li key={f} className="flex items-center gap-2.5">
+                  <HexDot />
                   {f}
                 </li>
               ))}
@@ -61,13 +62,14 @@ export default function AiCohort() {
           </Reveal>
         </div>
 
-        <Reveal delay={0.1} y={24} className="relative lg:col-span-5">
+        <Reveal variant="media" delay={0.1} className="relative lg:col-span-5">
           <PhotoFrame
             src="/images/home-ai-course.webp"
             alt="A young woman learning on her smartphone at home in the evening"
             caption="A young woman learning AI on her smartphone at home"
             ratio="4 / 5"
-            className="ml-auto max-w-md rounded-[1.75rem] lg:max-w-none"
+            chamfer
+            className="ml-auto max-w-md lg:max-w-none"
           />
           <div className="absolute -bottom-6 left-0 flex items-center gap-4 rounded-2xl bg-surface p-3 pr-6 shadow-lift ring-1 ring-border sm:-left-6 lg:-left-10">
             <div className="flex w-16 flex-col overflow-hidden rounded-xl text-center ring-1 ring-border">
