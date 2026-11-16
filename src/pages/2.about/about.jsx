@@ -20,7 +20,7 @@ export default function AboutPage() {
       <PageHeader eyebrow="About" title={copy.title} text={copy.text} />
       <section aria-label="Our community" className="pt-12 sm:pt-16">
         <div className="container-gd">
-          <Reveal>
+          <Reveal variant="media">
             <PhotoFrame
               src="/images/about-community.webp"
               alt="A GetDigital community workshop at Amara Hub in Lira"
@@ -28,7 +28,8 @@ export default function AboutPage() {
               ratio="21 / 9"
               position="72% center"
               priority
-              className="rounded-[1.75rem] [aspect-ratio:4/3] sm:[aspect-ratio:21/9]"
+              chamfer
+              className="[aspect-ratio:4/3] sm:[aspect-ratio:21/9]"
             />
           </Reveal>
         </div>
